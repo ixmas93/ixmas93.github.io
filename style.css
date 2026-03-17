@@ -676,12 +676,12 @@ footer{
 /* DARK THEME */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: rgba(45, 45, 45, 1);
+        background-color: rgb(64, 81, 78);
         color: white;
     }
 
     .baby-pink {
-        background-color: rgb(243, 162, 200);
+        background-color: rgb(17, 153, 158);
     }
 
     .baby-pink-light {

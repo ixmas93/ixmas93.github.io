@@ -676,21 +676,21 @@ footer{
 /* DARK THEME */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: rgb(33, 33, 33);
+        background-color: rgba(45, 45, 45, 1);
         color: white;
     }
 
     .baby-pink {
-        background-color: rgb(0, 255, 68);
+        background-color: rgb(243, 162, 200);
     }
 
     .baby-pink-light {
-        background-color: rgb(255, 153, 0);
-        border: 2px solid rgb(255, 0, 225);
+        background-color: rgba(45, 45, 45, 1);
+        border: 2px solid rgb(243, 162, 200);
     }
 
     .main-nav {
-        background-color: rgb(33, 33, 33);
+        background-color: rgba(45, 45, 45, 1);
     }
 
     .main-nav li a {

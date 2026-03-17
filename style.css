@@ -111,7 +111,7 @@ body {
 /* Setting alignments and sizing */
 /* for the flexbox */
 .wrapper{
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
     padding: 20px;
     display: flex;

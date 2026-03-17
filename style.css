@@ -722,7 +722,7 @@ footer{
 
     .button-outline:hover, .button-outline:active{
         border: 2px solid rgb(20, 255, 236);
-        background-color: rgb(20, 255, 236);
+        background-color: rgb(0, 164, 148);
     }
 
     .card{

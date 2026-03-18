@@ -246,7 +246,7 @@ body {
 .project-card-button{
     display: flex;
     gap: 10px;
-    justify-content: flex-start;
+    margin-top: auto;
 }
 
 /* ---------------------------------- */
@@ -519,12 +519,18 @@ footer{
 }
 
 .box{
-    display: block;       /* evita espacios extra debajo de la imagen */
-    width: 95%;           /* casi todo el ancho de su contenedor */
-    max-width: 400px;     /* opcional, limita tamaño máximo */
-    height: auto;         /* mantiene proporción */
-    margin: 0 auto 15px auto; /* centrada con pequeño margen inferior */
+    display: block;       
+    width: 95%;           
+    max-width: 400px;     
+    height: auto;         
+    margin: 0 auto 15px auto; 
 }
+
+.column.card.justify.flex{
+    display: flex;
+    flex-direction: column;
+}
+
 /* ---------------------------------- */
 
 /* CONTACT ME */

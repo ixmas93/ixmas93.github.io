@@ -116,8 +116,6 @@ body {
     padding: 20px;
     display: flex;
     gap: 20px 20px;
-    justify-content: center; /* centra las tarjetas horizontalmente */
-    flex-wrap: wrap;         /* permite que bajen a otra fila si no caben */
 }
 
 .column{
@@ -533,6 +531,16 @@ footer{
     flex-direction: column;
     width: 100%;       
     max-width: 300px;  /* controla el ancho máximo de cada tarjeta */
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;          /* permite que bajen a otra fila si no caben */
+    justify-content: center;  /* centra las tarjetas horizontalmente */
+    gap: 20px 20px;           /* espacio entre tarjetas */
+    max-width: 1200px;        /* ancho máximo opcional */
+    margin: auto;             /* centra el contenedor en la página */
+    padding: 20px;            /* igual que tu wrapper original */
 }
 
 /* ---------------------------------- */

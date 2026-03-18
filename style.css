@@ -529,6 +529,8 @@ footer{
 .column.card.justify.flex{
     display: flex;
     flex-direction: column;
+    width: 100%;       
+    max-width: 300px;
 }
 
 /* ---------------------------------- */

@@ -242,6 +242,11 @@ body {
 .no-bullet-list{
     list-style-type: none;
 }
+
+.project-card-button{
+    display: flex;
+}
+
 /* ---------------------------------- */
 
 /* ANIMATIONS AND OTHER BEAUTIES */

@@ -246,7 +246,7 @@ body {
 .project-card-button{
     display: flex;
     gap: 10px;
-    justify-content: left;
+    justify-content: flex-start;
 }
 
 /* ---------------------------------- */
@@ -519,8 +519,11 @@ footer{
 }
 
 .box{
-    display: block;
-    width: 100px;
+    display: block;       /* evita espacios extra debajo de la imagen */
+    width: 95%;           /* casi todo el ancho de su contenedor */
+    max-width: 400px;     /* opcional, limita tamaño máximo */
+    height: auto;         /* mantiene proporción */
+    margin: 0 auto 15px auto; /* centrada con pequeño margen inferior */
 }
 /* ---------------------------------- */
 
@@ -615,7 +618,8 @@ footer{
     }
 
     .box{
-        margin: auto;
+        width: 90%;
+        margin: 0 auto 15px auto;
     }
 
     .thanks{

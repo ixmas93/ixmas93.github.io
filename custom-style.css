@@ -152,12 +152,15 @@ button.button-outline{
 ================================ */
 
 .contact-email{
+    background-color: rgba(134, 127, 127, 0.3);     /* color grisaceo, personalizable */
+    border-radius: 12px;            /* esquinas redondeadas */
+    padding: 20px 30px;             /* espacio interno */
     display: flex;
     align-items: center;
-    gap: 15px;
-    justify-content: center;
-    margin: 40px 0;
-    flex-wrap: wrap;
+    gap: 15px;                      /* espacio entre elementos internos */
+    position: relative;             /* necesario para la burbuja flotante */
+    flex-wrap: wrap;                /* para que los botones no se salgan en pantallas pequeñas */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .email-label{

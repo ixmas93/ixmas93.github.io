@@ -151,17 +151,19 @@ button.button-outline{
    EMAIL CONTACT
 ================================ */
 
-.contact-email{
-    background-color: rgba(134, 127, 127, 0.3);     /* color grisaceo, personalizable */
-    border-radius: 12px;            /* esquinas redondeadas */
-    padding: 20px 30px;             /* espacio interno */
-    display: flex;
-    align-items: center;
-    gap: 15px;                      /* espacio entre elementos internos */
-    position: relative;             /* necesario para la burbuja flotante */
-    flex-wrap: wrap;                /* para que los botones no se salgan en pantallas pequeñas */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.contact-email {
+    display: inline-flex;             /* ajusta ancho al contenido */
+    align-items: center;              /* centra verticalmente */
+    gap: 10px;                        /* espacio entre elementos */
+    flex-wrap: wrap;                  /* para pantallas pequeñas */
+    padding: 15px 25px;               /* espacio interno */
+    border-radius: 12px;              /* esquinas redondeadas */
+    background-color: #e0e0e0;        /* color del rectángulo, personalizable */
+    position: relative;               /* necesario para burbuja flotante */
+    margin-bottom: 30px;              /* margen debajo del rectángulo */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1); /* opcional, efecto “tarjeta” */
 }
+
 
 .email-label{
     font-weight: bold;
@@ -174,20 +176,18 @@ button.button-outline{
 
 /* burbuja flotante */
 .copy-popup {
-    position: absolute;       /* para poder posicionarla sobre el botón */
+    position: absolute;
     background-color: rgba(255, 255, 255, 0.9);
     color: rgb(0, 0, 0);
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.9rem;
-    opacity: 0;               /* invisible por defecto */
-    pointer-events: none;     /* no interfiere con clicks */
-    transition: opacity 0.3s ease;
-    white-space: nowrap;      /* que el texto no rompa línea */
-
-    /* animación de movimiento hacia arriba */
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
     transform: translateY(0);
     transition: opacity 0.3s ease, transform 1s ease-out;
+    z-index: 10;                       /* siempre encima del contenedor */
 }
 
 /* cuando se muestra, aplicamos clase "visible" */

@@ -22,10 +22,6 @@
     margin-bottom: 60px;
 }
 
-.featured-project:nth-child(even){
-    flex-direction: row-reverse;
-}
-
 /* texto */
 
 .project-info{

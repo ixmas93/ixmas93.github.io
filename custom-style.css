@@ -1,3 +1,54 @@
-body{
-    background-color: #1eff00;
+/* ===============================
+   FEATURED PROJECTS SECTION
+================================ */
+
+.featured-projects{
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.featured-projects h2{
+    margin-bottom: 40px;
+}
+
+/* bloque de cada proyecto */
+
+.featured-project{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* texto */
+
+.project-info{
+    flex: 1;
+}
+
+/* botones */
+
+.project-buttons{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* imagen */
+
+.project-image img{
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px){
+
+    .featured-project{
+        flex-direction: column;
+        text-align: center;
+    }
+
 }

@@ -160,8 +160,8 @@ button.button-outline{
     border-radius: 12px;              /* esquinas redondeadas */
     background-color: #e0e0e0;        /* color del rectángulo, personalizable */
     position: relative;               /* necesario para burbuja flotante */
-    margin-bottom: 30px;              /* margen debajo del rectángulo */
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1); /* opcional, efecto “tarjeta” */
+    margin: 0 auto 30px auto;         /* centro horizontal + margen abajo */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5); /* opcional, efecto “tarjeta” */
 }
 
 

@@ -250,10 +250,11 @@
         <a href="mailto:miemail@gmail.com" class="button-outline">
             Enviar correo
         </a>
-        <a class="button-outline" onclick="copyEmail()">
+        <a href="#" class="button-outline" onclick="copyEmail()">
             Copiar email
         </a>
-        <span id="copy-message"></span>
+        <!-- notificación flotante -->
+        <span id="copy-message" class="copy-popup"></span>
     </section>
 
 </body>
@@ -264,18 +265,27 @@
 <script>
 
 function copyEmail() {
-
     const email = document.getElementById("email-address").textContent;
-
     navigator.clipboard.writeText(email);
 
     const message = document.getElementById("copy-message");
     message.textContent = "¡Email copiado!";
 
-    setTimeout(() => {
-        message.textContent = "";
-    }, 2000);
+    // posiciónar la burbuja sobre el botón
+    const button = event.currentTarget;
+    const rect = button.getBoundingClientRect();
 
+    // ponemos la burbuja ligeramente arriba del botón
+    message.style.top = (button.offsetTop - 30) + "px";
+    message.style.left = button.offsetLeft + "px";
+
+    // mostrar
+    message.classList.add("visible");
+
+    // desaparecer después de 2 segundos
+    setTimeout(() => {
+        message.classList.remove("visible");
+    }, 2000);
 }
 
 </script>

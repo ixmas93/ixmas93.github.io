@@ -1,4 +1,18 @@
 /* =========================
+   GENERAL
+========================= */
+button.button-outline{
+    background: transparent;
+    border: 2px solid rgba(253, 129, 187, 0.3);
+    padding: 10px;
+    border-radius: 5%;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+/* =========================
    EXPERIENCIA
 ========================= */
 .experience-section{

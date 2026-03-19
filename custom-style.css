@@ -152,16 +152,17 @@ button.button-outline{
 ================================ */
 
 .contact-email {
-    display: inline-flex;             /* ajusta ancho al contenido */
-    align-items: center;              /* centra verticalmente */
-    gap: 10px;                        /* espacio entre elementos */
-    flex-wrap: wrap;                  /* para pantallas pequeñas */
-    padding: 15px 25px;               /* espacio interno */
-    border-radius: 12px;              /* esquinas redondeadas */
-    background-color: #e0e0e0;        /* color del rectángulo, personalizable */
-    position: relative;               /* necesario para burbuja flotante */
-    margin: 0 auto 30px auto;         /* centro horizontal + margen abajo */
-    box-shadow: 0 3px 10px rgba(0,0,0,0.5); /* opcional, efecto “tarjeta” */
+    display: flex;                     /* cambia a flex “normal” */
+    width: fit-content;                 /* ancho se ajusta al contenido */
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 15px 25px;
+    border-radius: 12px;
+    background-color: #2b2b2b;
+    position: relative;
+    margin: 0 auto 30px auto;           /* ahora sí se centra */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
 }
 
 

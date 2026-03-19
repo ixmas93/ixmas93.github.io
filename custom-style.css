@@ -130,3 +130,31 @@
     }
 
 }
+
+
+
+/* ===============================
+   EMAIL CONTACT
+================================ */
+
+.contact-email{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.email-label{
+    font-weight: bold;
+}
+
+#email-address{
+    font-family: monospace;
+}
+
+#copy-message{
+    font-size: 0.9em;
+    color: #4caf50;
+}

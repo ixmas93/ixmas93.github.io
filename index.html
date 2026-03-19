@@ -242,6 +242,40 @@
         </section>
     </section>
 
+    <!--CONTACT-->
+    <section class="contact-email">
+        <span class="email-label">Email:</span>
+        <span id="email-address">miemail@gmail.com</span>
+
+        <a href="mailto:miemail@gmail.com" class="button-outline">
+            Enviar correo
+        </a>
+        <button class="button-outline" onclick="copyEmail()">
+            Copiar email
+        </button>
+        <span id="copy-message"></span>
+    </section>
+
 </body>
 
 </html>
+
+
+<script>
+
+function copyEmail() {
+
+    const email = document.getElementById("email-address").textContent;
+
+    navigator.clipboard.writeText(email);
+
+    const message = document.getElementById("copy-message");
+    message.textContent = "¡Email copiado!";
+
+    setTimeout(() => {
+        message.textContent = "";
+    }, 2000);
+
+}
+
+</script>

@@ -1,3 +1,77 @@
+/* =========================
+   EXPERIENCIA
+========================= */
+.experience-section{
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.experience-section h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Cada bloque de experiencia */
+.experience-item{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Icono a la izquierda */
+.experience-left{
+    flex-shrink: 0;
+}
+
+.experience-icon{
+    width: 50px;
+    height: 50px;
+}
+
+/* Información de la experiencia */
+.experience-right{
+    flex: 1;
+}
+
+.experience-header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.company-name{
+    font-size: 1.1em;
+}
+
+.experience-dates{
+    font-size: 0.9em;
+    color: #666;
+}
+
+.experience-role{
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.experience-description{
+    line-height: 1.4;
+}
+
+/* Responsive para móvil */
+@media (max-width: 768px){
+    .experience-item{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .experience-header{
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
 /* ===============================
    FEATURED PROJECTS SECTION
 ================================ */

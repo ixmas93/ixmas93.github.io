@@ -168,16 +168,12 @@ button.button-outline{
     font-weight: bold;
 }
 
-#copy-message{
-    font-size: 0.9em;
-    color: #4caf50;
-}
 
 /* burbuja flotante */
 .copy-popup {
     position: absolute;       /* para poder posicionarla sobre el botón */
-    background-color: rgba(253, 129, 187, 0.9);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(0, 0, 0);
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.9rem;
@@ -185,9 +181,14 @@ button.button-outline{
     pointer-events: none;     /* no interfiere con clicks */
     transition: opacity 0.3s ease;
     white-space: nowrap;      /* que el texto no rompa línea */
+
+    /* animación de movimiento hacia arriba */
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 1s ease-out;
 }
 
 /* cuando se muestra, aplicamos clase "visible" */
 .copy-popup.visible {
     opacity: 1;
+    transform: translateY(-20px); /* se moverá 20px hacia arriba */
 }

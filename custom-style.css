@@ -6,7 +6,7 @@ button.button-outline{
     border: 2px solid rgba(253, 129, 187, 0.3);
     padding: 10px;
     border-radius: 5%;
-    color: black;
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 

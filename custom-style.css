@@ -9,16 +9,21 @@
 }
 
 .featured-projects h2{
-    margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 /* bloque de cada proyecto */
 
 .featured-project{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
     margin-bottom: 60px;
+}
+
+.featured-project:nth-child(even){
+    flex-direction: row-reverse;
 }
 
 /* texto */
@@ -43,6 +48,9 @@
     border-radius: 8px;
 }
 
+.project-image{
+    flex-shrink: 0;
+}
 
 @media (max-width: 768px){
 

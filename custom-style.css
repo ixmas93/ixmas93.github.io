@@ -62,7 +62,7 @@ body::before {
 /* Secciones con fondo alternativo */
 .baby-pink {
     background-color: var(--color-bg-card);
-    border-left: 3px solid var(--color-accent2);
+    border-left: 15px solid var(--color-accent2);
     color: var(--color-text);
 }
 

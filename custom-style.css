@@ -1,4 +1,107 @@
 /* =========================
+   TEMA GENERAL
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+    --color-bg:        #1a1f2e;
+    --color-bg-card:   #242938;
+    --color-accent:    #00e5cc;
+    --color-accent2:   #ff9f43;
+    --color-text:      #e8eaf0;
+    --color-text-muted:#8892a4;
+    --color-border:    rgba(0, 229, 204, 0.3);
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Fuente monospace para títulos grandes */
+.large, .medium-spacing, .medium-spacing-halfsize {
+    font-family: 'JetBrains Mono', monospace !important;
+    background-image: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent2) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-title-large, .main-title {
+    font-family: 'JetBrains Mono', monospace !important;
+    color: var(--color-text);
+}
+
+/* Nav */
+.main-nav {
+    background-color: var(--color-bg-card);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.main-nav li a {
+    color: var(--color-text-muted);
+}
+
+.main-nav li a:hover {
+    color: var(--color-accent);
+}
+
+/* Secciones con fondo alternativo */
+.baby-pink {
+    background-color: var(--color-bg-card);
+    border-left: 3px solid var(--color-accent2);
+    color: var(--color-text);
+}
+
+.baby-pink-light {
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+}
+
+/* Botones */
+.button-outline {
+    border: 1.5px solid var(--color-accent);
+    color: var(--color-accent);
+    background: transparent;
+}
+
+.button-outline:hover, .button-outline:active {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    border-color: var(--color-accent);
+}
+
+/* Tarjetas */
+.card {
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    box-shadow: none;
+}
+
+/* Colorful letter ahora usa el acento */
+.colorful-letter {
+    background-image: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent2) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Footer */
+footer {
+    color: var(--color-text-muted);
+    border-top: 1px solid var(--color-border);
+}
+
+/* Iconos de contacto */
+.logo {
+    background-color: transparent;
+    filter: invert(1) brightness(2);
+}
+
+
+/* =========================
    GENERAL
 ========================= */
 button.button-outline{

@@ -17,10 +17,18 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text);
     font-family: 'DM Sans', sans-serif;
-    background-image: radial-gradient(circle, #00e5cc22 1px, transparent 1px);
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: radial-gradient(circle, #00e5cc 1px, transparent 1px);
     background-size: 24px 24px;
-    -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+    opacity: 0.08; /* <-- cambia este valor para más o menos intensidad */
     mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
 }
 
 /* Fuente monospace para títulos grandes */

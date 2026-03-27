@@ -16,6 +16,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 24px;
+    padding-bottom: 8px;
 }
 
 /* Botones de filtro */

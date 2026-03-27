@@ -1,0 +1,141 @@
+/* =========================
+   PORTFOLIO PAGE
+========================= */
+
+/* Cabecera */
+.pf-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.pf-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.5rem;
+    background-image: linear-gradient(135deg, #00e5cc 0%, #ff9f43 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+}
+
+/* Botones de filtro */
+.pf-filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.pf-filter-btn {
+    border: 1.5px solid rgba(0, 229, 204, 0.5);
+    border-radius: 20px;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #00e5cc;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pf-filter-btn:hover {
+    background-color: #00e5cc;
+    color: #1a1f2e;
+}
+
+/* Secciones de categoría */
+.pf-category {
+    max-width: 900px;
+    margin: 60px auto 20px;
+    padding: 0 20px;
+}
+
+.pf-category-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.6rem;
+    color: #e8eaf0;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.pf-category-subtitle {
+    text-align: center;
+    color: #8892a4;
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+}
+
+/* Lista de proyectos dentro de cada categoría */
+.pf-projects-list {
+    border: 1px solid rgba(0, 229, 204, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Tarjeta de proyecto */
+.pf-project-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    background-color: #242938;
+    border-bottom: 1px solid rgba(0, 229, 204, 0.1);
+}
+
+.pf-project-card:last-child {
+    border-bottom: none;
+}
+
+/* Texto */
+.pf-project-info {
+    flex: 1;
+}
+
+.pf-project-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1rem;
+    color: #e8eaf0;
+    margin: 0 0 8px;
+}
+
+.pf-project-desc {
+    font-size: 0.85rem;
+    color: #8892a4;
+    line-height: 1.6;
+    margin: 0 0 8px;
+}
+
+.pf-project-tech {
+    font-size: 0.8rem;
+    color: #00e5cc;
+    margin: 0 0 12px;
+}
+
+.pf-project-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Imagen */
+.pf-project-image {
+    flex-shrink: 0;
+}
+
+.pf-project-image img {
+    width: 220px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+    .pf-project-card {
+        flex-direction: column;
+    }
+
+    .pf-project-image img {
+        width: 100%;
+        height: auto;
+    }
+}

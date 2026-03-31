@@ -161,7 +161,36 @@ button.button-outline{
     color: white;
 }
 
+/* =========================
+   PILLS NARANJA (PLUGINS)
+========================= */
+.tech-pills-orange .tech-pill {
+    border-color: rgba(255, 159, 67, 0.5);
+    background-color: rgba(255, 159, 67, 0.05);
+}
 
+.tech-pills-orange .tech-pill:hover {
+    background-color: var(--color-accent2);
+    border-color: var(--color-accent2);
+    color: var(--color-bg);
+}
+
+
+/* =========================
+   EMAIL EN SOBRE MÍ
+========================= */
+.aboutme-contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 14px 20px;
+    border-radius: 12px;
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    position: relative;
+}
 
 
 /* =========================

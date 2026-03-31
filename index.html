@@ -98,7 +98,7 @@
             <!-- Plugins -->
             <div class="tech-stack">
                 <span class="tech-label">Plugins y sistemas:</span>
-                <div class="tech-pills">
+                <div class="tech-pills tech-pills-orange">
                     <span class="tech-pill">A* Pathfinding</span>
                     <span class="tech-pill">FMod</span>
                     <span class="tech-pill">XR Interaction Toolkit</span>
@@ -109,7 +109,16 @@
                 </div>
             </div>
             
-            <p class="padding-top"><a href="about-me.html" class="button-outline">¡Conóceme a fondo!</a></p>
+            <div class="aboutme-contact">
+                <span class="email-label">Email:</span>
+                <span id="email-address-about">ismaelvaliente93@gmail.com</span>
+                <a href="mailto:ismaelvaliente93@gmail.com" class="button-outline">Enviar correo</a>
+                <a href="javascript:void(0)" class="button-outline" onclick="copyEmailAbout()">Copiar email</a>
+                <span id="copy-message-about" class="copy-popup"></span>
+            </div>
+            <p class="padding-top">
+                <a href="assets/curriculum.pdf" target="_blank" class="button-outline">Ver mi currículum</a>
+            </p>
         </section>
     </section>
 
@@ -335,6 +344,18 @@ function copyEmail() {
     setTimeout(() => {
         message.classList.remove("visible");
     }, 2000);
+}
+
+function copyEmailAbout() {
+    const email = document.getElementById("email-address-about").textContent;
+    navigator.clipboard.writeText(email);
+    const message = document.getElementById("copy-message-about");
+    message.textContent = "¡Email copiado!";
+    const button = event.currentTarget;
+    message.style.top = (button.offsetTop - 30) + "px";
+    message.style.left = button.offsetLeft + "px";
+    message.classList.add("visible");
+    setTimeout(() => { message.classList.remove("visible"); }, 2000);
 }
 
 </script>

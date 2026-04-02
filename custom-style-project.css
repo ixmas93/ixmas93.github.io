@@ -16,7 +16,7 @@
     border: 1.5px solid #00e5cc;
     border-radius: 20px;
     padding: 4px 16px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #00e5cc;
     margin-bottom: 12px;
     font-family: 'JetBrains Mono', monospace;
@@ -130,7 +130,7 @@
 
 .prj-block-title {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.85rem;
+    font-size: 1.25rem;
     color: #00e5cc;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -138,7 +138,7 @@
 }
 
 .prj-block-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #8892a4;
     line-height: 1.8;
     margin: 0 0 8px;
@@ -157,7 +157,7 @@
 }
 
 .prj-block ul li {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #8892a4;
     line-height: 1.8;
     padding-left: 16px;
@@ -169,7 +169,7 @@
     position: absolute;
     left: 0;
     color: #00e5cc;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     top: 5px;
 }
 

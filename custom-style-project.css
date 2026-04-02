@@ -30,6 +30,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-top: 10px;
     padding-bottom: 8px;
     margin-bottom: 24px;
 }

@@ -130,7 +130,7 @@
 
 .prj-block-title {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #00e5cc;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -139,7 +139,7 @@
 
 .prj-block-text {
     font-size: 1rem;
-    color: #8892a4;
+    color: #b8bfcc;
     line-height: 1.8;
     margin: 0 0 8px;
 }
@@ -171,6 +171,11 @@
     color: #00e5cc;
     font-size: 0.8rem;
     top: 5px;
+}
+
+/* Separación entre desafíos */
+.prj-block p + p {
+    margin-top: 20px;
 }
 
 /* =========================

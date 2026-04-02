@@ -23,7 +23,9 @@
 <!-- lightbox -->
 <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox(event)">
     <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <span class="lightbox-arrow prev" onclick="changeImage(-1)">&#8249;</span>
     <img id="lightbox-img" src="" alt="Imagen ampliada">
+    <span class="lightbox-arrow next" onclick="changeImage(1)">&#8250;</span>
 </div>
 
 <body>
@@ -178,29 +180,45 @@
     <footer>@iluskaland 2024</footer>
 
     <script>
-    function copyEmail() {
-        const email = document.getElementById("email-address").textContent;
-        navigator.clipboard.writeText(email);
-        const message = document.getElementById("copy-message");
-        message.textContent = "¡Email copiado!";
-        const button = event.currentTarget;
-        message.style.top = (button.offsetTop - 30) + "px";
-        message.style.left = button.offsetLeft + "px";
-        message.classList.add("visible");
-        setTimeout(() => { message.classList.remove("visible"); }, 2000);
-    }
+        let currentIndex = 0;
+        let galleryImages = [];
 
-    function openLightbox(img) {
-        document.getElementById('lightbox-img').src = img.src;
-        document.getElementById('lightbox').classList.add('active');
-    }
+        function openLightbox(img) {
+            galleryImages = Array.from(document.querySelectorAll('.prj-gallery img'));
+            currentIndex = galleryImages.indexOf(img);
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
 
-    function closeLightbox(event) {
-        if (!event || event.target !== document.getElementById('lightbox-img')) {
+        function changeImage(direction) {
+            currentIndex = (currentIndex + direction + galleryImages.length) % galleryImages.length;
+            document.getElementById('lightbox-img').src = galleryImages[currentIndex].src;
+        }
+
+        function closeLightbox(event) {
+            const img = document.getElementById('lightbox-img');
+            const arrows = document.querySelectorAll('.lightbox-arrow');
+            const close = document.querySelector('.lightbox-close');
+            if (!event) {
+                document.getElementById('lightbox').classList.remove('active');
+                return;
+            }
+            if (event.target === img || event.target === arrows[0] || 
+                event.target === arrows[1] || event.target === close) return;
             document.getElementById('lightbox').classList.remove('active');
         }
-    }
 
+        function copyEmail() {
+            const email = document.getElementById("email-address").textContent;
+            navigator.clipboard.writeText(email);
+            const message = document.getElementById("copy-message");
+            message.textContent = "¡Email copiado!";
+            const button = event.currentTarget;
+            message.style.top = (button.offsetTop - 30) + "px";
+            message.style.left = button.offsetLeft + "px";
+            message.classList.add("visible");
+            setTimeout(() => { message.classList.remove("visible"); }, 2000);
+        }
     </script>
 
 </body>

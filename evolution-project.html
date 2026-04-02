@@ -20,6 +20,12 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
+<!-- lightbox -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox(event)">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" alt="Imagen ampliada">
+</div>
+
 <body>
     <!-- navigation bar -->
     <nav class="sticky">
@@ -66,9 +72,9 @@
 
     <!-- galería de imágenes -->
     <section class="prj-gallery">
-        <img src="assets/evolution-thumbnail.jpg" alt="Captura del proyecto">
-        <img src="assets/evolution-thumbnail.jpg" alt="Captura del proyecto">
-        <img src="assets/evolution-thumbnail.jpg" alt="Captura del proyecto">
+        <img src="assets/evolution-thumbnail.jpg" alt="Captura del proyecto" onclick="openLightbox(this)">
+        <img src="assets/evolution-thumbnail.jpg" alt="Captura del proyecto" onclick="openLightbox(this)">
+        <img src="assets/evolution-thumbnail.jpg" alt="Captura del proyecto" onclick="openLightbox(this)">
     </section>
 
     <!-- contenido del proyecto -->
@@ -181,6 +187,18 @@
         message.classList.add("visible");
         setTimeout(() => { message.classList.remove("visible"); }, 2000);
     }
+
+    function openLightbox(img) {
+        document.getElementById('lightbox-img').src = img.src;
+        document.getElementById('lightbox').classList.add('active');
+    }
+
+    function closeLightbox(event) {
+        if (!event || event.target !== document.getElementById('lightbox-img')) {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    }
+
     </script>
 
 </body>

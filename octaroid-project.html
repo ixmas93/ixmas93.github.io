@@ -47,7 +47,7 @@
     <!-- cabecera del proyecto -->
     <section class="prj-header">
         <!-- título -->
-        <h1 class="prj-title">Evolution: From the little light</h1>
+        <h1 class="prj-title">OCTAROID</h1>
         <!-- categoría -->
         <span class="prj-category">Profesional</span>
 
@@ -65,7 +65,7 @@
         <!-- botones -->
         <div class="prj-header-buttons">
             <a href="https://store.steampowered.com/app/2710880/Evolution_From_the_little_light/" 
-            target="_blank" class="button-outline">Página de Steam</a>
+            target="_blank" class="button-outline">Juégalo</a>
             <!--<a href="https://github.com/tu-repo" target="_blank" class="prj-github-btn" title="Ver código en GitHub">
                 <img src="assets/github.png" alt="GitHub">
             </a>-->
@@ -83,36 +83,41 @@
     <section class="prj-content">
         <div class="prj-block">
             <h3 class="prj-block-title">Descripción del proyecto</h3>
-            <p class="prj-block-text">Plataforma: PC (publicado en Steam)</p>
-            <p class="prj-block-text">Juego 2D narrativo de aventura, acción y puzzles en el que controlas una
-                criatura submarina que evoluciona mientras explora las profundidades del océano enfrentándose a
-                los peligros que le acechan.</p>
-            <p class="prj-block-text">Desarrollado por Mysterious Hat, un equipo de 7 personas, con financiación de la Unión Europea.</p>
+            <p class="prj-block-text">Plataforma: PC (publicado en Itch.io)</p>
+            <p class="prj-block-text">Juego de acción arcade con leaderboard online, estilo retro y partidas rápidas 
+                en la que controlas una nave espacial. Dispara, acumula puntos y sobrevive el mayor tiempo posible 
+                para ascender en la clasificación online y superar al resto de jugadores. 
+                <br>
+                El desarrollo llevó aproximadamente 3 meses y me sirvió para experimentar, aprender a crear funcionalidades
+                online y aventurarme a crear musica y sonidos propios. El juego está pensado para que pueda jugarse rápidamente
+                y sin complicaciones desde la propia web.
+            </p>
+            <p class="prj-block-text">
+            </p>
         </div>
 
         <div class="prj-block">
             <h3 class="prj-block-title">Mi contribución</h3>
-            <p class="prj-block-text">Trabajé como programador principal en un equipo de 7 personas, encargándome de:</p>
+            <p class="prj-block-text">Desarrollé por completo el juego, encargándome de:</p>
             <ul>
-                <li>Programación de sistemas de gameplay y puzzles</li>
-                <li>Implementación de IA de enemigos (comportamiento y navegación)</li>
-                <li>Desarrollo de UI</li>
-                <li>Cinemáticas y secuencias in-game</li>
-                <li>Diseño de la arquitectura del proyecto</li>
-                <li>Análisis y optimización del rendimiento</li>
-                <li>Preparación y publicación en Steam</li>
+                <li>Programación del gameplay y funciones online</li>
+                <li>Diseño de gameplay y mecánicas</li>
+                <li>Diseño y desarrollo de UI</li>
+                <li>Arte 2D, animaciones y efectos visuales</li>
+                <li>Creación de la música y efectos de sonido</li>
+                <li>Preparación, maquetación de la web y publicación en Itch.io</li>
             </ul>
         </div>
 
         <div class="prj-block">
             <h3 class="prj-block-title">Sistemas implementados</h3>
             <ul>
-                <li>Control, combate e interacciones del jugador</li>
-                <li>IA de enemigos y NPCs (comportamiento, combate y navegación por la escena)</li>
-                <li>Transiciones entre escenas sin pantallas de carga mediante carga aditiva</li>
-                <li>Cinemáticas y secuencias in-game</li>
-                <li>Sistema de cámaras dinámicas</li>
-                <li>Adaptación de controles a mando de consola (incluyendo hotswap teclado/mando)</li>
+                <li>Leaderboard online, incluyendo un sistema de jugadores superados tras la partida y un explorador del ranking</li>
+                <li>Control errores y validación de datos introducidos en el leaderboard</li>
+                <li>Adaptación y pulido del juego en la versión web (WebGL)</li>
+                <li>Gestión de musica y efectos de sonido con Audio Mixer, pudiendo ajustarlos por separado en las opciones</li>
+                <li>Efecto "Hit-Stop" cuando el jugador es dañado</li>
+                <li>"Object pooling" de asteroides, balas, sonidos y efectos para un buen rendimiento, ampliándose durante la partida si es necesario</li>
             </ul>
         </div>
 
@@ -120,7 +125,7 @@
             <h3 class="prj-block-title">Tecnologías y herramientas</h3>
             <ul>
                 <li><strong>Motor y lenguaje:</strong> Unity, C#</li>
-                <li><strong>Herramientas:</strong> A* Pathfinding, FMOD, Cinemachine, Easy Save 3, Tail Animator</li>
+                <li><strong>Herramientas:</strong> Cinemachine, Easy Save 3, Leaderboard Creator, FL Studio</li>
                 <li><strong>Control de versiones:</strong> Git, GitHub</li>
             </ul>
         </div>
@@ -128,34 +133,19 @@
         <div class="prj-block">
             <h3 class="prj-block-title">Desafíos del proyecto</h3>
             <p class="prj-block-text">
-                <strong>Desarrollo bajo plazos muy ajustados</strong><br>
-                Me incorporé al estudio para desarrollar la primera demo jugable del proyecto, que debía presentarse
-                    en un evento en un plazo de un mes y medio. Partiendo desde cero, me encargué de programar
-                    y organizar los sistemas principales, centrándome en las funcionalidades clave para asegurar una
-                    experiencia sólida. Gracias a una buena planificación y a un trabajo intensivo, conseguimos llegar
-                    a tiempo con una demo completamente jugable y lista para su presentación.
+                <strong>Leaderboard: Control de errores y pulido</strong><br>
+                Aquello fue una puta movida mi loco, el server va como la mierda, asi que imaginate
             </p>
             <p class="prj-block-text">
-                <strong>IA de enemigos y diseño de comportamiento</strong><br>
-                Fue un reto tanto a nivel de lógica como de navegación y pulido. El juego 
-                    incluye enemigos que patrullan, detectan y persiguen al jugador, además de un jefe con un sistema 
-                    de combate basado en distintos estados y patrones. Para gestionarlo, diseñé máquinas de estado que 
-                    permitieran organizar los comportamientos de forma clara y escalable. Gran parte del trabajo estuvo 
-                    en el pulido, transiciones y reacciones de los enemigos para que todos funcionaran correctamente.
+                <strong>Adaptación y solución de errores para la versión web</strong><br>
+                hablar tambien de como gestionaste los datos del cache, recuerda que
+                creo que no conseguias que la web reconociese tu usuario para mantener tu nombre y opciones
+                al recargar la pagina
             </p>
             <p class="prj-block-text">
-                <strong>Cinemáticas in-game y narrativa interactiva</strong><br>
-                Las cinemáticas supusieron un reto importante, porque el jugador debía seguir teniendo 
-                    control durante las secuencias sin romper la experiencia. Para ello, desarrollé scripts que coordinaban 
-                    eventos narrativos en tiempo real, con el control del jugador en todo momento. Gran parte del 
-                    trabajo estuvo en el pulido, y ajustes de las interacciones entre gameplay y narrativa para evitar 
-                    comportamientos inesperados.
-            </p>
-            <p class="prj-block-text">
-                <strong>Transiciones sin pantallas de carga</strong><br>
-                Al ser un juego narrativo, era crucial mantener la inmersión evitando interrupciones entre zonas. 
-                    Para ello, implementé un sistema de carga aditiva de escenas en Unity, gestionando la carga y descarga 
-                    en segundo plano sin afectar al rendimiento, logrando transiciones fluidas entre áreas.
+                <strong>Diseño y legibilidad de la UI</strong><br>
+                Aquello fue una puta movida mi loco, se me metio en los cojones hacerlo retro y octagonal,
+                así que imaginate los problemas que dio eso
             </p>
         </div>
     </section>
@@ -164,7 +154,7 @@
     <section class="prj-nav">
         <a href="evolution-project.html" class="button-outline prj-nav-btn">&#60; Anterior</a>
         <a href="portfolio.html" class="button-outline prj-nav-center">Volver al portfolio</a>
-        <a href="octaroid-project.html" class="button-outline prj-nav-btn">Siguiente &#62;</a>
+        <a href="project3.html" class="button-outline prj-nav-btn">Siguiente &#62;</a>
     </section>
 
     <!-- contacto -->

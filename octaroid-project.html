@@ -135,17 +135,27 @@
             <p class="prj-block-text">
                 <strong>Gestión de errores en el leaderboard</strong><br>
                 El sistema de leaderboard acabó siendo más complejo de lo que parecía, sobre todo a la hora de 
-                gestionar errores, validar datos y asegurar que todo funcionara de forma fluida. 
-                <br><br>
+                gestionar errores, validar datos y asegurar que todo funcionara de forma fluida.
                 Para solucionarlo, diseñé una estructura modular para cada parte del sistema y me aseguré de 
                 contemplar y controlar los distintos errores posibles, como problemas de conexión con el 
                 servicio, para mantener una experiencia de juego estable y sin interrupciones.
             </p>
             <p class="prj-block-text">
-                <strong>Adaptación y solución de errores para la versión web</strong><br>
-                hablar tambien de como gestionaste los datos del cache, recuerda que
-                creo que no conseguias que la web reconociese tu usuario para mantener tu nombre y opciones
-                al recargar la pagina
+                <strong>Adaptación a Web y sus limitaciones</strong><br>
+                Adaptar el juego a web trajo varios problemas inesperados, como incompatibilidades con el 
+                postprocesado y problemas de audio, como delay y pérdida de calidad. La solución fue entender 
+                las limitaciones de la plataforma. Ajusté distintos parámetros del proyecto para que el postprocesado 
+                fuera compatible, y en el caso del audio, optimicé el peso y formato de los archivos, además de la 
+                forma en la que se reproducen. Todo esto me ayudó a comprender las disintas reglas y limitaciones que 
+                hay al adaptar a web.
+            </p>
+            <p class="prj-block-text">
+                <strong>Persistencia de datos en Web</strong><br>
+                Quería que el jugador mantuviera su nombre y ajustes cada vez que entrase al juego, pero en web estos datos 
+                se perdían al recargar la página. Al principio asumí que funcionaría como en otros proyectos, pero resultó 
+                ser otra peculiaridad de esta plataforma. Tras investigarlo, descubrí que la solución era guardar estos datos 
+                en la propia caché del navegador, manteniendo la configuración del usuario sin problemas mientras no elimine 
+                la caché.
             </p>
         </div>
     </section>

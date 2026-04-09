@@ -47,9 +47,9 @@
     <!-- cabecera del proyecto -->
     <section class="prj-header">
         <!-- título -->
-        <h1 class="prj-title">Evolution: From the little light</h1>
+        <h1 class="prj-title">Miña Querida</h1>
         <!-- categoría -->
-        <span class="prj-category">Profesional</span>
+        <span class="prj-category">Game Jam</span>
 
         <!-- vídeo de youtube -->
         <div class="prj-video-wrapper">
@@ -64,8 +64,8 @@
 
         <!-- botones -->
         <div class="prj-header-buttons">
-            <a href="https://store.steampowered.com/app/2710880/Evolution_From_the_little_light/" 
-            target="_blank" class="button-outline">Página de Steam</a>
+            <a href="https://joseajierro.itch.io/mina-querida" 
+            target="_blank" class="button-outline">Juégalo</a>
             <!--<a href="https://github.com/tu-repo" target="_blank" class="prj-github-btn" title="Ver código en GitHub">
                 <img src="assets/github.png" alt="GitHub">
             </a>-->
@@ -83,37 +83,38 @@
     <section class="prj-content">
         <div class="prj-block">
             <h3 class="prj-block-title">Descripción del proyecto</h3>
-            <p class="prj-block-text">Plataforma: PC (publicado en Steam)</p>
-            <p class="prj-block-text">Juego 2D narrativo de aventura, acción y puzzles en el que controlas una
-                criatura submarina que evoluciona mientras explora las profundidades del océano enfrentándose a
-                los peligros que le acechan.</p>
-            <p class="prj-block-text">Desarrollado por Mysterious Hat, un equipo de 7 personas, con financiación de la Unión Europea.</p>
+            <p class="prj-block-text">Plataforma: PC / Web (publicado en Itch.io)</p>
+            <p class="prj-block-text">Un pequeño juego de horror narrativo basado en el mito de la Santa Compaña, donde una niña 
+                explora tenebrosos bosques evitando su malicioso acecho para encontrar la forma de devolver la salud a su padre. 
+                <br><br>
+                Videojuego desarrollado en una semana por un equipo de 6 personas para la "Indie Spain Jam 2023" con el tema 
+                "Cae la noche". Conseguimos el primer puesto en la categoría de "adaptación al tema" y el séptimo puesto como 
+                mejor juego general de entre los 176 juegos presentados.
+            </p>
+            <p class="prj-block-text">
+            </p>
         </div>
 
         <div class="prj-block">
             <h3 class="prj-block-title">Mi contribución</h3>
-            <p class="prj-block-text">Trabajé como programador principal en un equipo de 7 personas, encargándome de:</p>
+            <p class="prj-block-text">Trabajé junto a otro programador, encargándome de:</p>
             <ul>
-                <li>Programación de sistemas de gameplay y puzzles</li>
-                <li>Implementación de IA de enemigos (comportamiento y navegación)</li>
-                <li>Desarrollo de UI</li>
-                <li>Cinemáticas y secuencias in-game</li>
-                <li>Diseño de la arquitectura del proyecto</li>
-                <li>Análisis y optimización del rendimiento</li>
-                <li>Preparación y publicación en Steam</li>
+                <li>Programación del gameplay</li>
+                <li>Sistema de diálogos con retratos de personajes</li>
+                <li>Sistema de navegación de los enemigos</li>
+                <li>Programación de la UI</li>
+                <li>Cinemáticas y secuencias narrativas</li>
+                <li>Audio 3D inmersivo</li>
+                <li>Aportando ideas y mecánicas en el diseño de juego</li>
             </ul>
         </div>
 
         <div class="prj-block">
             <h3 class="prj-block-title">Sistemas implementados</h3>
             <ul>
-                <li>Control, combate e interacciones del jugador</li>
-                <li>IA de enemigos y NPCs (comportamiento, combate y navegación por la escena)</li>
-                <li>Transiciones entre escenas sin pantallas de carga mediante carga aditiva</li>
-                <li>Sistema de carga y descarga de elementos para reducir el coste de recursos</li>
-                <li>Cinemáticas y secuencias in-game</li>
-                <li>Sistema de cámaras dinámicas</li>
-                <li>Adaptación de controles a mando de consola (incluyendo hotswap teclado/mando)</li>
+                <li>Sistema de diálogos con retratos de personajes</li>
+                <li>Navegación de enemigos</li>
+                <li>Audio 3D inmersivo</li>
             </ul>
         </div>
 
@@ -121,7 +122,7 @@
             <h3 class="prj-block-title">Tecnologías y herramientas</h3>
             <ul>
                 <li><strong>Motor y lenguaje:</strong> Unity, C#</li>
-                <li><strong>Herramientas:</strong> A* Pathfinding, FMOD, Cinemachine, Easy Save 3, Tail Animator</li>
+                <li><strong>Herramientas:</strong> Ninguna en especial</li>
                 <li><strong>Control de versiones:</strong> Git, GitHub</li>
             </ul>
         </div>
@@ -129,45 +130,28 @@
         <div class="prj-block">
             <h3 class="prj-block-title">Desafíos del proyecto</h3>
             <p class="prj-block-text">
-                <strong>Desarrollo bajo plazos muy ajustados</strong><br>
-                Me incorporé al estudio para desarrollar la primera demo jugable del proyecto, que debía presentarse
-                    en un evento en un plazo de un mes y medio. Partiendo desde cero, me encargué de programar
-                    y organizar los sistemas principales, centrándome en las funcionalidades clave para asegurar una
-                    experiencia sólida. Gracias a una buena planificación y a un trabajo intensivo, conseguimos llegar
-                    a tiempo con una demo completamente jugable y lista para su presentación.
+                <strong>Iluminación 2D, sombras y rendimiento</strong><br>
+                Para generar tensión en la oscuridad, el juego utiliza un sistema de iluminación y sombras en tiempo real, lo 
+                que resultó más complejo de lo esperado en 2D, especialmente por problemas de rendimiento y compatibilidad en web.
+                La solución fue implementar el sistema usando 2D Lights, lo que además permitió un workflow más sencillo para 
+                indicar cómo interactúa la luz con escenarios y obstáculos. También optimizamos la iluminación y ajustamos distintos 
+                parámetros del proyecto para optimizar el rendimiento y que funcionase en web.
             </p>
             <p class="prj-block-text">
-                <strong>IA de enemigos y diseño de comportamiento</strong><br>
-                Fue un reto tanto a nivel de lógica como de navegación y pulido. El juego 
-                    incluye enemigos que patrullan, detectan y persiguen al jugador, además de un jefe con un sistema 
-                    de combate basado en distintos estados y patrones. Para gestionarlo, diseñé máquinas de estado que 
-                    permitieran organizar los comportamientos de forma clara y escalable. Gran parte del trabajo estuvo 
-                    en el pulido, transiciones y reacciones de los enemigos para que todos funcionaran correctamente.
-            </p>
-            <p class="prj-block-text">
-                <strong>Cinemáticas in-game y narrativa interactiva</strong><br>
-                Las cinemáticas supusieron un reto importante, porque el jugador debía seguir teniendo 
-                    control durante las secuencias sin romper la experiencia. Para ello, desarrollé scripts que coordinaban 
-                    eventos narrativos en tiempo real, con el control del jugador en todo momento. Gran parte del 
-                    trabajo estuvo en el pulido, y ajustes de las interacciones entre gameplay y narrativa para evitar 
-                    comportamientos inesperados.
-            </p>
-            <p class="prj-block-text">
-                <strong>Transiciones sin pantallas de carga y rendimiento</strong><br>
-                Al ser un juego narrativo, era crucial mantener la inmersión evitando interrupciones entre zonas. 
-                    Para ello, implementé un sistema de carga aditiva de escenas en Unity, gestionando la carga y descarga 
-                    en segundo plano sin afectar al rendimiento, logrando transiciones fluidas entre áreas. Por otro lado,
-                    para mantener un buen rendimiento, el juego iba cargando y descargando elementos según eran o no
-                    necesarios en cada momento de la partida, reduciendo notablemente el coste de recursos.
+                <strong>IA y navegación dinámica del enemigo</strong><br>
+                El enemigo principal persigue al jugador a través del bosque, pero queríamos evitar una persecución constante y 
+                frustrante. La idea era generar tensión sin castigar en exceso al jugador. Lo conseguimos creando un sistema que 
+                evalúa la distancia al objetivo y las veces que el jugador ha sido atrapado, adaptando su comportamiento en 
+                consecuencia: tomando atajos, acercándose más rápido o incluso dándole un respiro si lo ha atrapado varias veces.
             </p>
         </div>
     </section>
 
     <!-- navegación entre proyectos -->
     <section class="prj-nav">
-        <a href="evolution-project.html" class="button-outline prj-nav-btn">&#60; Anterior</a>
+        <a href="octaroid-project.html" class="button-outline prj-nav-btn">&#60; Anterior</a>
         <a href="portfolio.html" class="button-outline prj-nav-center">Volver al portfolio</a>
-        <a href="octaroid-project.html" class="button-outline prj-nav-btn">Siguiente &#62;</a>
+        <a href="project3.html" class="button-outline prj-nav-btn">Siguiente &#62;</a>
     </section>
 
     <!-- contacto -->

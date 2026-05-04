@@ -47,7 +47,7 @@
     <!-- cabecera del proyecto -->
     <section class="prj-header">
         <!-- título -->
-        <h1 class="prj-title">Hidromorpher</h1>
+        <h1 class="prj-title">Soul Bound</h1>
         <!-- categoría -->
         <span class="prj-category">Game Jam</span>
 
@@ -64,7 +64,7 @@
 
         <!-- botones -->
         <div class="prj-header-buttons">
-            <a href="https://jpbarroso.itch.io/hidromorpher" 
+            <a href="https://wolf-byte.itch.io/soul-bound" 
             target="_blank" class="button-outline">Juégalo</a>
             <!--<a href="https://github.com/tu-repo" target="_blank" class="prj-github-btn" title="Ver código en GitHub">
                 <img src="assets/github.png" alt="GitHub">
@@ -83,14 +83,12 @@
     <section class="prj-content">
         <div class="prj-block">
             <h3 class="prj-block-title">Descripción del proyecto</h3>
-            <p class="prj-block-text">Plataforma: PC (publicado en Itch.io)</p>
-            <p class="prj-block-text">Un pequeño juego de plataformas y puzles donde controlas a una simpática criatura de 
-                agua que utiliza los elementos del entorno para cambiar su temperatura, transformándose en gas o solidificándose 
-                como hielo para superar obstáculos y avanzar en su aventura.
+            <p class="prj-block-text">Plataforma: PC / Web (publicado en Itch.io)</p>
+            <p class="prj-block-text">Un pequeño juego arcade donde el jugador puede enlazarse con cualquier elemento del escenario 
+                para girar sobre él, destruyendo a los enemigos, absorber sus almas y depositarlas en el bastón para ganar puntos.
                 <br><br>
-                Videojuego desarrollado en una semana por un equipo de 6 personas para la Indie Spain Jam 2022, con el tema “De 0 
-                a 100”. El proyecto obtuvo doble primer puesto en las categorías de “Diseño y mecánicas” y “Adaptación al tema”, y 
-                alcanzó el noveno puesto como mejor juego general de entre los 171 juegos presentados.
+                Videojuego desarrollado en dos semanas en solitario para "Tu juego a juicio Jam 2021" con el tema 
+                "Demasiado largo".
             </p>
             <p class="prj-block-text">
             </p>
@@ -98,20 +96,23 @@
 
         <div class="prj-block">
             <h3 class="prj-block-title">Mi contribución</h3>
-            <p class="prj-block-text">Trabajé junto a otro programador, encargándome de:</p>
+            <p class="prj-block-text">Trabajé en solitario, encargándome de:</p>
             <ul>
                 <li>Programación del gameplay</li>
+                <li>Sistema de navegación de los enemigos</li>
                 <li>Programación de la UI</li>
-                <li>Diseño de mecánicas y diseño de niveles</li>
+                <li>Animaciones, iluminación, partículas</li>
+                <li>Implementación de música y efectos de sonido</li>
+                <li>Diseño y mecánicas</li>
             </ul>
         </div>
 
         <div class="prj-block">
             <h3 class="prj-block-title">Sistemas implementados</h3>
             <ul>
-                <li>Sistema de temperatura del personaje</li>
-                <li>Transformación a distintos personajes</li>
-                <li>Sistema de diálogos</li>
+                <li>Sistema de enlace del jugador, sus giros, físicas e interacciones</li>
+                <li>Navegación de enemigos</li>
+                <li>Object pooling para las partículas y sonidos</li>
             </ul>
         </div>
 
@@ -127,25 +128,18 @@
         <div class="prj-block">
             <h3 class="prj-block-title">Desafíos del proyecto</h3>
             <p class="prj-block-text">
-                <strong>Transformaciones del personaje</strong><br>
-                El personaje cuenta con tres formas (agua, gas y hielo), cada una con sus propias mecánicas e interacciones 
-                con el entorno. Gestionar correctamente estos cambios y su comportamiento supuso un reto a nivel de pulido.
-                La solución fue diseñar una estructura sólida que controlase el estado del personaje en cada momento, evitando 
-                interacciones erróneas y asegurando un comportamiento consistente.
-            </p>
-            <p class="prj-block-text">
-                <strong>Diseño de niveles y mecánicas</strong><br>
-                Me encargué del diseño de mecánicas y niveles, priorizando pocas ideas pero bien aprovechadas debido al tiempo 
-                limitado de la game jam. Opté por crear elementos versátiles que pudieran reutilizarse en distintos contextos.
-                Esto permitió diseñar niveles variados y mantener el juego fresco. Fue todo un acierto y además fuimos premiados 
-                por ello.
+                <strong>Giros e interacciones</strong><br>
+                El jugador puede enlazarse a elementos del escenario y girar sobre ellos para eliminar enemigos. Conseguir que el 
+                movimiento fuese fluido y que las colisiones se detectaran correctamente, incluso a alta velocidad, supuso un reto.
+                Lo solucioné gestionando las colisiones en FixedUpdate y ajustando el giro con fórmulas sencillas, logrando una 
+                sensación de control precisa y satisfactoria.
             </p>
         </div>
     </section>
 
     <!-- navegación entre proyectos -->
     <section class="prj-nav">
-        <a href="minaquerida-project.html" class="button-outline prj-nav-btn">&#60; Anterior</a>
+        <a href="hidromorpher-project.html" class="button-outline prj-nav-btn">&#60; Anterior</a>
         <a href="portfolio.html" class="button-outline prj-nav-center">Volver al portfolio</a>
         <a href="project3.html" class="button-outline prj-nav-btn">Siguiente &#62;</a>
     </section>

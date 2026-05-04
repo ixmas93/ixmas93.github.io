@@ -47,7 +47,7 @@
     <!-- cabecera del proyecto -->
     <section class="prj-header">
         <!-- título -->
-        <h1 class="prj-title">Miña Querida</h1>
+        <h1 class="prj-title">Hidromorpher</h1>
         <!-- categoría -->
         <span class="prj-category">Game Jam</span>
 
@@ -64,7 +64,7 @@
 
         <!-- botones -->
         <div class="prj-header-buttons">
-            <a href="https://joseajierro.itch.io/mina-querida" 
+            <a href="https://jpbarroso.itch.io/hidromorpher" 
             target="_blank" class="button-outline">Juégalo</a>
             <!--<a href="https://github.com/tu-repo" target="_blank" class="prj-github-btn" title="Ver código en GitHub">
                 <img src="assets/github.png" alt="GitHub">
@@ -83,13 +83,14 @@
     <section class="prj-content">
         <div class="prj-block">
             <h3 class="prj-block-title">Descripción del proyecto</h3>
-            <p class="prj-block-text">Plataforma: PC / Web (publicado en Itch.io)</p>
-            <p class="prj-block-text">Un pequeño juego de horror narrativo basado en el mito de la Santa Compaña, donde una niña 
-                explora tenebrosos bosques evitando su malicioso acecho para encontrar la forma de devolver la salud a su padre. 
+            <p class="prj-block-text">Plataforma: PC (publicado en Itch.io)</p>
+            <p class="prj-block-text">Un pequeño juego de plataformas y puzles donde controlas a una simpática criatura de 
+                agua que utiliza los elementos del entorno para cambiar su temperatura, transformándose en gas o solidificándose 
+                como hielo para superar obstáculos y avanzar en su aventura.
                 <br><br>
-                Videojuego desarrollado en una semana por un equipo de 6 personas para la "Indie Spain Jam 2023" con el tema 
-                "Cae la noche". Conseguimos el primer puesto en la categoría de "adaptación al tema" y el séptimo puesto como 
-                mejor juego general de entre los 176 juegos presentados.
+                Videojuego desarrollado en una semana por un equipo de 6 personas para la Indie Spain Jam 2022, con el tema “De 0 
+                a 100”. El proyecto obtuvo doble primer puesto en las categorías de “Diseño y mecánicas” y “Adaptación al tema”, y 
+                alcanzó el noveno puesto como mejor juego general entre 171 participantes.
             </p>
             <p class="prj-block-text">
             </p>
@@ -100,21 +101,17 @@
             <p class="prj-block-text">Trabajé junto a otro programador, encargándome de:</p>
             <ul>
                 <li>Programación del gameplay</li>
-                <li>Sistema de diálogos con retratos de personajes</li>
-                <li>Sistema de navegación de los enemigos</li>
                 <li>Programación de la UI</li>
-                <li>Cinemáticas y secuencias narrativas</li>
-                <li>Audio 3D inmersivo</li>
-                <li>Aportando ideas y mecánicas en el diseño de juego</li>
+                <li>Diseño de mecánicas y diseño de niveles</li>
             </ul>
         </div>
 
         <div class="prj-block">
             <h3 class="prj-block-title">Sistemas implementados</h3>
             <ul>
-                <li>Sistema de diálogos con retratos de personajes</li>
-                <li>Navegación de enemigos</li>
-                <li>Audio 3D inmersivo</li>
+                <li>Sistema de temperatura del personaje</li>
+                <li>Transformación a distintos personajes</li>
+                <li>Sistema de diálogos</li>
             </ul>
         </div>
 
@@ -130,28 +127,27 @@
         <div class="prj-block">
             <h3 class="prj-block-title">Desafíos del proyecto</h3>
             <p class="prj-block-text">
-                <strong>Iluminación 2D, sombras y rendimiento</strong><br>
-                Para generar tensión en la oscuridad, el juego utiliza un sistema de iluminación y sombras en tiempo real, lo 
-                que resultó más complejo de lo esperado en 2D, especialmente por problemas de rendimiento y compatibilidad en web.
-                La solución fue implementar el sistema usando 2D Lights, lo que además permitió un workflow más sencillo para 
-                indicar cómo interactúa la luz con escenarios y obstáculos. También optimizamos la iluminación y ajustamos distintos 
-                parámetros del proyecto para optimizar el rendimiento y que funcionase en web.
+                <strong>Transformaciones del personaje</strong><br>
+                El personaje cuenta con tres formas (agua, gas y hielo), cada una con sus propias mecánicas e interacciones 
+                con el entorno. Gestionar correctamente estos cambios y su comportamiento supuso un reto a nivel de pulido.
+                La solución fue diseñar una estructura sólida que controlase el estado del personaje en cada momento, evitando 
+                interacciones erróneas y asegurando un comportamiento consistente.
             </p>
             <p class="prj-block-text">
-                <strong>IA y navegación dinámica del enemigo</strong><br>
-                El enemigo principal persigue al jugador a través del bosque, pero queríamos evitar una persecución constante y 
-                frustrante. La idea era generar tensión sin castigar en exceso al jugador. Lo conseguimos creando un sistema que 
-                evalúa la distancia al objetivo y las veces que el jugador ha sido atrapado, adaptando su comportamiento en 
-                consecuencia: tomando atajos, acercándose más rápido o incluso dándole un respiro si lo ha atrapado varias veces.
+                <strong>Diseño de niveles y mecánicas</strong><br>
+                Me encargué del diseño de mecánicas y niveles, priorizando pocas ideas pero bien aprovechadas debido al tiempo 
+                limitado de la game jam. Opté por crear elementos versátiles que pudieran reutilizarse en distintos contextos.
+                Esto permitió diseñar niveles variados y mantener el juego fresco. Fue todo un acierto y además fuimos premiados 
+                por ello
             </p>
         </div>
     </section>
 
     <!-- navegación entre proyectos -->
     <section class="prj-nav">
-        <a href="octaroid-project.html" class="button-outline prj-nav-btn">&#60; Anterior</a>
+        <a href="minaquerida-project.html" class="button-outline prj-nav-btn">&#60; Anterior</a>
         <a href="portfolio.html" class="button-outline prj-nav-center">Volver al portfolio</a>
-        <a href="hidromorpher-project.html" class="button-outline prj-nav-btn">Siguiente &#62;</a>
+        <a href="project3.html" class="button-outline prj-nav-btn">Siguiente &#62;</a>
     </section>
 
     <!-- contacto -->

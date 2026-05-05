@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample text for portfolio template meta tag">
+    <meta name="keywords" content="Sample text for portfolio template meta tag">
+    <meta name="author" content="Sample text for portfolio template meta tag">
+    <title>Vidyacard All Stars</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style-project.css">
+    <link rel="stylesheet" type="text/css" href="custom-style.css">
+    <link rel="stylesheet" type="text/css" href="custom-style-project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<!-- lightbox -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox(event)">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <span class="lightbox-arrow prev" onclick="changeImage(-1)">&#8249;</span>
+    <img id="lightbox-img" src="" alt="Imagen ampliada">
+    <span class="lightbox-arrow next" onclick="changeImage(1)">&#8250;</span>
+</div>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="sticky">
+        <label for="drop" class="toggle" id="main-toggle">
+            <span class="nav-icon"></span>
+        </label>
+        <input type="checkbox" id="drop">
+        <ul class="main-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about-me.html">Sobre mí</a></li>
+            <li><a href="skill-set.html">Mis habilidades</a></li>
+            <li><a href="index.html#contact-me">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- cabecera del proyecto -->
+    <section class="prj-header">
+        <!-- título -->
+        <h1 class="prj-title">Vidyacard All Stars</h1>
+        <!-- categoría -->
+        <span class="prj-category">Prototipo</span>
+
+        <!-- vídeo de youtube -->
+        <div class="prj-video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/JhW53HExmsw"
+                title="Vídeo del proyecto"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- botones -->
+        <!--<div class="prj-header-buttons">
+            <a href="https://store.steampowered.com/app/2710880/Evolution_From_the_little_light/" 
+            target="_blank" class="button-outline">Juégalo</a>-->
+            <!--<a href="https://github.com/tu-repo" target="_blank" class="prj-github-btn" title="Ver código en GitHub">
+                <img src="assets/github.png" alt="GitHub">
+            </a>-->
+        <!--</div>-->
+    </section>
+
+    <!-- galería de imágenes -->
+    <section class="prj-gallery">
+        <img src="assets/evolution-thumbnail.jpg" alt="Captura del proyecto" onclick="openLightbox(this)">
+        <img src="assets/evolution-thumbnail.jpg" alt="Captura del proyecto" onclick="openLightbox(this)">
+        <img src="assets/evolution-thumbnail.jpg" alt="Captura del proyecto" onclick="openLightbox(this)">
+    </section>
+
+    <!-- contenido del proyecto -->
+    <section class="prj-content">
+        <div class="prj-block">
+            <h3 class="prj-block-title">Descripción del proyecto</h3>
+            <p class="prj-block-text">Plataforma: Móviles</p>
+            <p class="prj-block-text">Una aplicación de realidad aumentada que escanea una serie de tarjetas coleccionables
+                sobre personajes de videojuegos creadas por mi mismo. Al escanear una tarjeta se muestra el personaje en 3D 
+                y su biografía, además de reproducir música y sonidos propios. 
+                <br><br>
+                El desarrollo llevó aproximadamente un mes y fue un proyecto muy divertido donde aprendí a implementar un
+                sistema de realidad aumentada usando "Vuforia" y hacer mi propia coleccion de tarjetas coleccionables de mis
+                juegos favoritos en forma de homenaje. Por desgracia, un proyecto como este no puede ser publicado por razones
+                de copyright.
+            </p>
+            <p class="prj-block-text">
+            </p>
+        </div>
+
+        <div class="prj-block">
+            <h3 class="prj-block-title">Mi contribución</h3>
+            <p class="prj-block-text">Desarrollé por completo el juego, encargándome de:</p>
+            <ul>
+                <li>Función de escáner y seguimiento de realidad aumentada a través de la cámara del móvil</li>
+                <li>Estructura y programación de una base de datos con todas las tarjetas y sus datos</li>
+                <li>Diseño y desarrollo de UI</li>
+                <li>Animaciones e implementación de música y efectos de sonido</li>
+            </ul>
+        </div>
+
+        <div class="prj-block">
+            <h3 class="prj-block-title">Sistemas implementados</h3>
+            <ul>
+                <li>Escaneo y seguimiento de realidad aumentada a través de la cámara del móvil</li>
+                <li>Base de datos con todas las tarjetas y sus datos</li>
+            </ul>
+        </div>
+
+        <div class="prj-block">
+            <h3 class="prj-block-title">Tecnologías y herramientas</h3>
+            <ul>
+                <li><strong>Motor y lenguaje:</strong> Unity, C#</li>
+                <li><strong>Herramientas:</strong> Vuforia</li>
+                <li><strong>Control de versiones:</strong> Git, GitHub</li>
+            </ul>
+        </div>
+
+        <div class="prj-block">
+            <h3 class="prj-block-title">Desafíos del proyecto</h3>
+            <p class="prj-block-text">
+                <strong>Integración de Vuforia en AR</strong><br>
+                El proyecto se basa en el uso de Vuforia para escanear y hacer seguimiento de tarjetas en realidad aumentada, 
+                aunque su implementación inicial resultó algo confusa y con problemas de reconocimiento. Tras investigar y 
+                trabajar con la documentación, conseguí mejorar la detección y el seguimiento, implementando además un sistema 
+                basado en base de datos que permite gestionar múltiples tarjetas de forma rápida y fluida.
+            </p>
+        </div>
+    </section>
+
+    <!-- navegación entre proyectos -->
+    <section class="prj-nav">
+        <a href="soulbound-project.html" class="button-outline prj-nav-btn">&#60; Anterior</a>
+        <a href="portfolio.html" class="button-outline prj-nav-center">Volver al portfolio</a>
+        <a href="evolution-project.html" class="button-outline prj-nav-btn">Siguiente &#62;</a>
+    </section>
+
+    <!-- contacto -->
+    <section class="contact-email">
+        <span class="email-label">Email:</span>
+        <span id="email-address">ismaelvaliente93@gmail.com</span>
+        <a href="mailto:ismaelvaliente93@gmail.com" class="button-outline">Enviar correo</a>
+        <a href="javascript:void(0)" class="button-outline" onclick="copyEmail()">Copiar email</a>
+        <span id="copy-message" class="copy-popup"></span>
+    </section>
+
+    <!-- footer -->
+    <footer>@iluskaland 2024</footer>
+
+    <script>
+        let currentIndex = 0;
+        let galleryImages = [];
+
+        function openLightbox(img) {
+            galleryImages = Array.from(document.querySelectorAll('.prj-gallery img'));
+            currentIndex = galleryImages.indexOf(img);
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function changeImage(direction) {
+            currentIndex = (currentIndex + direction + galleryImages.length) % galleryImages.length;
+            document.getElementById('lightbox-img').src = galleryImages[currentIndex].src;
+        }
+
+        function closeLightbox(event) {
+            const img = document.getElementById('lightbox-img');
+            const arrows = document.querySelectorAll('.lightbox-arrow');
+            const close = document.querySelector('.lightbox-close');
+            if (!event) {
+                document.getElementById('lightbox').classList.remove('active');
+                return;
+            }
+            if (event.target === img || event.target === arrows[0] || 
+                event.target === arrows[1] || event.target === close) return;
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        function copyEmail() {
+            const email = document.getElementById("email-address").textContent;
+            navigator.clipboard.writeText(email);
+            const message = document.getElementById("copy-message");
+            message.textContent = "¡Email copiado!";
+            const button = event.currentTarget;
+            message.style.top = (button.offsetTop - 30) + "px";
+            message.style.left = button.offsetLeft + "px";
+            message.classList.add("visible");
+            setTimeout(() => { message.classList.remove("visible"); }, 2000);
+        }
+    </script>
+
+</body>
+</html>

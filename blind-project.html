@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample text for portfolio template meta tag">
+    <meta name="keywords" content="Sample text for portfolio template meta tag">
+    <meta name="author" content="Sample text for portfolio template meta tag">
+    <title>Blind</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style-project.css">
+    <link rel="stylesheet" type="text/css" href="custom-style.css">
+    <link rel="stylesheet" type="text/css" href="custom-style-project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<!-- lightbox -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox(event)">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <span class="lightbox-arrow prev" onclick="changeImage(-1)">&#8249;</span>
+    <img id="lightbox-img" src="" alt="Imagen ampliada">
+    <span class="lightbox-arrow next" onclick="changeImage(1)">&#8250;</span>
+</div>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="sticky">
+        <label for="drop" class="toggle" id="main-toggle">
+            <span class="nav-icon"></span>
+        </label>
+        <input type="checkbox" id="drop">
+        <ul class="main-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about-me.html">Sobre mí</a></li>
+            <li><a href="skill-set.html">Mis habilidades</a></li>
+            <li><a href="index.html#contact-me">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- cabecera del proyecto -->
+    <section class="prj-header">
+        <!-- título -->
+        <h1 class="prj-title">Blind</h1>
+        <!-- categoría -->
+        <span class="prj-category">Personal</span>
+
+        <!-- vídeo de youtube -->
+        <div class="prj-video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/JhW53HExmsw"
+                title="Vídeo del proyecto"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- botones -->
+        <div class="prj-header-buttons">
+            <a href="https://play.google.com/store/apps/details?id=com.WolfByte.Blind&hl=es" 
+            target="_blank" class="button-outline">Juégalo</a>
+            <!--<a href="https://github.com/tu-repo" target="_blank" class="prj-github-btn" title="Ver código en GitHub">
+                <img src="assets/github.png" alt="GitHub">
+            </a>-->
+        </div>
+    </section>
+
+    <!-- galería de imágenes -->
+    <section class="prj-gallery">
+        <img src="assets/evolution-thumbnail.jpg" alt="Captura del proyecto" onclick="openLightbox(this)">
+        <img src="assets/evolution-thumbnail.jpg" alt="Captura del proyecto" onclick="openLightbox(this)">
+        <img src="assets/evolution-thumbnail.jpg" alt="Captura del proyecto" onclick="openLightbox(this)">
+    </section>
+
+    <!-- contenido del proyecto -->
+    <section class="prj-content">
+        <div class="prj-block">
+            <h3 class="prj-block-title">Descripción del proyecto</h3>
+            <p class="prj-block-text">Plataforma: Móviles (Google Play)</p>
+            <p class="prj-block-text">Blind es un juego arcade rápido que pone a prueba la percepción visual del jugador. En 
+                pantalla aparecen varios círculos de colores, y el objetivo es encontrar rápidamente el que es ligeramente distinto.
+                A medida que avanzas, la dificultad aumenta, convirtiéndose en un reto cada vez más exigente para superar tu 
+                propia puntuación.
+                <br><br>
+                Uno de mis primeros proyectos, con un tiempo de desarrollo de un par de semanas. Me fue muy útil para aprender a
+                implementar anuncios con admob y a crear la posibilidad de compartir tu puntuación con tus amigos a través de redes sociales.
+            </p>
+            <p class="prj-block-text">
+            </p>
+        </div>
+
+        <div class="prj-block">
+            <h3 class="prj-block-title">Mi contribución</h3>
+            <p class="prj-block-text">Desarrollé por completo el juego, encargándome de:</p>
+            <ul>
+                <li>Programación del gameplay</li>
+                <li>Implementación de anuncios y monetización con Google AdMob</li>
+                <li>Desarrollo de la UI, siendo responsive tanto en móviles como en tablets</li>
+                <li>Preparación, maquetación y publicación en Google Play y App Store</li>
+                <li>Mantenimiento de la aplicación, solución de errores y contenido extra post lanzamiento</li>
+            </ul>
+        </div>
+
+        <div class="prj-block">
+            <h3 class="prj-block-title">Sistemas implementados</h3>
+            <ul>
+                <li>Monetización y reproducción de anuncios al jugar varias partidas</li>
+                <li>Compartir tu puntuación a través de redes sociales</li>
+            </ul>
+        </div>
+
+        <div class="prj-block">
+            <h3 class="prj-block-title">Tecnologías y herramientas</h3>
+            <ul>
+                <li><strong>Motor y lenguaje:</strong> Unity, C#</li>
+                <li><strong>Herramientas:</strong> Google AdMob</li>
+                <li><strong>Control de versiones:</strong> Git, GitHub</li>
+            </ul>
+        </div>
+
+        <div class="prj-block">
+            <h3 class="prj-block-title">Desafíos del proyecto</h3>
+            <p class="prj-block-text">
+                <strong>Compartir tu puntuación por redes sociales</strong><br>
+                Tenía especial interés en que el jugador pudiera compartir su puntuación a través de redes sociales o
+                aplicaciones como whatsapp, pero no tenia nada claro como podía hacer algo así. Tras investigar, conseguí
+                dar con una pequeña librería que pude implementar sin problemas en el proyecto y que tras varios ajustes
+                permitia compartir con una captura de pantalla tu puntuación a tus amigos de forma sencilla y rápida.
+            </p>
+            
+        </div>
+    </section>
+
+    <!-- navegación entre proyectos -->
+    <section class="prj-nav">
+        <a href="ballrush-project.html" class="button-outline prj-nav-btn">&#60; Anterior</a>
+        <a href="portfolio.html" class="button-outline prj-nav-center">Volver al portfolio</a>
+        <a href="project3.html" class="button-outline prj-nav-btn">Siguiente &#62;</a>
+    </section>
+
+    <!-- contacto -->
+    <section class="contact-email">
+        <span class="email-label">Email:</span>
+        <span id="email-address">ismaelvaliente93@gmail.com</span>
+        <a href="mailto:ismaelvaliente93@gmail.com" class="button-outline">Enviar correo</a>
+        <a href="javascript:void(0)" class="button-outline" onclick="copyEmail()">Copiar email</a>
+        <span id="copy-message" class="copy-popup"></span>
+    </section>
+
+    <!-- footer -->
+    <footer>@iluskaland 2024</footer>
+
+    <script>
+        let currentIndex = 0;
+        let galleryImages = [];
+
+        function openLightbox(img) {
+            galleryImages = Array.from(document.querySelectorAll('.prj-gallery img'));
+            currentIndex = galleryImages.indexOf(img);
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function changeImage(direction) {
+            currentIndex = (currentIndex + direction + galleryImages.length) % galleryImages.length;
+            document.getElementById('lightbox-img').src = galleryImages[currentIndex].src;
+        }
+
+        function closeLightbox(event) {
+            const img = document.getElementById('lightbox-img');
+            const arrows = document.querySelectorAll('.lightbox-arrow');
+            const close = document.querySelector('.lightbox-close');
+            if (!event) {
+                document.getElementById('lightbox').classList.remove('active');
+                return;
+            }
+            if (event.target === img || event.target === arrows[0] || 
+                event.target === arrows[1] || event.target === close) return;
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        function copyEmail() {
+            const email = document.getElementById("email-address").textContent;
+            navigator.clipboard.writeText(email);
+            const message = document.getElementById("copy-message");
+            message.textContent = "¡Email copiado!";
+            const button = event.currentTarget;
+            message.style.top = (button.offsetTop - 30) + "px";
+            message.style.left = button.offsetLeft + "px";
+            message.classList.add("visible");
+            setTimeout(() => { message.classList.remove("visible"); }, 2000);
+        }
+    </script>
+
+</body>
+</html>

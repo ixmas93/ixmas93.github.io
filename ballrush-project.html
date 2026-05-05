@@ -7,7 +7,7 @@
     <meta name="description" content="Sample text for portfolio template meta tag">
     <meta name="keywords" content="Sample text for portfolio template meta tag">
     <meta name="author" content="Sample text for portfolio template meta tag">
-    <title>Octaroid</title>
+    <title>Ball Rush</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="style-project.css">
     <link rel="stylesheet" type="text/css" href="custom-style.css">
@@ -47,9 +47,9 @@
     <!-- cabecera del proyecto -->
     <section class="prj-header">
         <!-- título -->
-        <h1 class="prj-title">OCTAROID</h1>
+        <h1 class="prj-title">Ball Rush</h1>
         <!-- categoría -->
-        <span class="prj-category">Profesional</span>
+        <span class="prj-category">Personal</span>
 
         <!-- vídeo de youtube -->
         <div class="prj-video-wrapper">
@@ -64,7 +64,7 @@
 
         <!-- botones -->
         <div class="prj-header-buttons">
-            <a href="https://store.steampowered.com/app/2710880/Evolution_From_the_little_light/" 
+            <a href="https://play.google.com/store/apps/details?id=com.Wolfbyte.BallRush" 
             target="_blank" class="button-outline">Juégalo</a>
             <!--<a href="https://github.com/tu-repo" target="_blank" class="prj-github-btn" title="Ver código en GitHub">
                 <img src="assets/github.png" alt="GitHub">
@@ -83,14 +83,10 @@
     <section class="prj-content">
         <div class="prj-block">
             <h3 class="prj-block-title">Descripción del proyecto</h3>
-            <p class="prj-block-text">Plataforma: PC (publicado en Itch.io)</p>
-            <p class="prj-block-text">Juego de acción arcade con leaderboard online, estilo retro y partidas rápidas 
-                en la que controlas una nave espacial. Dispara, acumula puntos y sobrevive el mayor tiempo posible 
-                para ascender en la clasificación online y superar al resto de jugadores. 
-                <br><br>
-                El desarrollo llevó aproximadamente 3 meses y me sirvió para experimentar, aprender a crear funcionalidades
-                online y aventurarme a crear musica y sonidos propios. El juego está pensado para que pueda jugarse rápidamente
-                y sin complicaciones desde la propia web.
+            <p class="prj-block-text">Plataforma: Móviles (Google Play)</p>
+            <p class="prj-block-text">Ball Rush es un juego sencillo en el que mueves una bola evitando obstáculos hasta llegar 
+                a la meta. Consigue puntuaciones altas recogiendo todas las monedas en cada nivel y llegando a la meta lo más 
+                rápido posible. El juego cuenta con varios modos de juego y skins desbloqueables para personalizar la bola.
             </p>
             <p class="prj-block-text">
             </p>
@@ -100,24 +96,21 @@
             <h3 class="prj-block-title">Mi contribución</h3>
             <p class="prj-block-text">Desarrollé por completo el juego, encargándome de:</p>
             <ul>
-                <li>Programación del gameplay y funciones online</li>
-                <li>Diseño de gameplay y mecánicas</li>
-                <li>Diseño y desarrollo de UI</li>
-                <li>Arte 2D, animaciones y efectos visuales</li>
-                <li>Creación de la música y efectos de sonido</li>
-                <li>Preparación, maquetación de la web y publicación en Itch.io</li>
+                <li>Programación del gameplay y controles táctiles</li>
+                <li>Implementación de anuncios y monetización con Google AdMob</li>
+                <li>Desarrollo de la UI, siendo responsive tanto en móviles como en tablets</li>
+                <li>Diseño de mecánicas y niveles</li>
+                <li>Preparación, maquetación y publicación en Google Play y App Store</li>
+                <li>Mantenimiento de la aplicación, solución de errores y contenido extra post lanzamiento</li>
             </ul>
         </div>
 
         <div class="prj-block">
             <h3 class="prj-block-title">Sistemas implementados</h3>
             <ul>
-                <li>Leaderboard online, incluyendo un sistema de jugadores superados tras la partida y un explorador del ranking</li>
-                <li>Control errores y validación de datos introducidos en el leaderboard</li>
-                <li>Adaptación y pulido del juego en la versión web (WebGL)</li>
-                <li>Gestión de musica y efectos de sonido con Audio Mixer, pudiendo ajustarlos por separado en las opciones</li>
-                <li>Efecto "Hit-Stop" cuando el jugador es dañado</li>
-                <li>"Object pooling" de asteroides, balas, sonidos y efectos para un buen rendimiento, ampliándose durante la partida si es necesario</li>
+                <li>Monetización y reproducción de anuncios al jugar varias partidas o al revivir</li>
+                <li>Sistema de skins aleatorias en cofres y personalización de la bola</li>
+                <li>Modo de juego contrarreloj</li>
             </ul>
         </div>
 
@@ -125,7 +118,7 @@
             <h3 class="prj-block-title">Tecnologías y herramientas</h3>
             <ul>
                 <li><strong>Motor y lenguaje:</strong> Unity, C#</li>
-                <li><strong>Herramientas:</strong> Cinemachine, Easy Save 3, Leaderboard Creator, FL Studio</li>
+                <li><strong>Herramientas:</strong> Google AdMob, ProBuilder</li>
                 <li><strong>Control de versiones:</strong> Git, GitHub</li>
             </ul>
         </div>
@@ -133,36 +126,19 @@
         <div class="prj-block">
             <h3 class="prj-block-title">Desafíos del proyecto</h3>
             <p class="prj-block-text">
-                <strong>Gestión de errores en el leaderboard</strong><br>
-                El sistema de leaderboard acabó siendo más complejo de lo que parecía, sobre todo a la hora de 
-                gestionar errores, validar datos y asegurar que todo funcionara de forma fluida.
-                Para solucionarlo, diseñé una estructura modular para cada parte del sistema y me aseguré de 
-                contemplar y controlar los distintos errores posibles, como problemas de conexión con el 
-                servicio, para mantener una experiencia de juego estable y sin interrupciones.
+                <strong>Controles táctiles y cámara</strong><br>
+                Uno de los principales retos fue diseñar unos controles táctiles que permitiesen mover la bola y controlar la 
+                cámara de forma cómoda y fluida al mismo tiempo. La solución fue implementar un joystick dinámico en la parte 
+                izquierda de la pantalla y un control de cámara independiente en la derecha, permitiendo girarla de forma natural. 
+                Esto consiguió un control preciso, cómodo y fácil de usar.
             </p>
-            <p class="prj-block-text">
-                <strong>Adaptación a Web y sus limitaciones</strong><br>
-                Adaptar el juego a web trajo varios problemas inesperados, como incompatibilidades con el 
-                postprocesado y problemas de audio, como delay y pérdida de calidad. La solución fue entender 
-                las limitaciones de la plataforma. Ajusté distintos parámetros del proyecto para que el postprocesado 
-                fuera compatible, y en el caso del audio, optimicé el peso y formato de los archivos, además de la 
-                forma en la que se reproducen. Todo esto me ayudó a comprender las disintas reglas y limitaciones que 
-                hay al adaptar a web.
-            </p>
-            <p class="prj-block-text">
-                <strong>Persistencia de datos en Web</strong><br>
-                Quería que el jugador mantuviera su nombre y ajustes cada vez que entrase al juego, pero en web estos datos 
-                se perdían al recargar la página. Al principio asumí que funcionaría como en otros proyectos, pero resultó 
-                ser otra peculiaridad de esta plataforma. Tras investigarlo, descubrí que la solución era guardar estos datos 
-                en la propia caché del navegador, manteniendo la configuración del usuario sin problemas mientras no elimine 
-                la caché.
-            </p>
+            
         </div>
     </section>
 
     <!-- navegación entre proyectos -->
     <section class="prj-nav">
-        <a href="evolution-project.html" class="button-outline prj-nav-btn">&#60; Anterior</a>
+        <a href="octaroid-project.html" class="button-outline prj-nav-btn">&#60; Anterior</a>
         <a href="portfolio.html" class="button-outline prj-nav-center">Volver al portfolio</a>
         <a href="project3.html" class="button-outline prj-nav-btn">Siguiente &#62;</a>
     </section>

@@ -361,8 +361,8 @@ button.button-outline{
 }
 
 .project-image img {
-    width: 220px;
-    height: 130px;
+    width: 210px;
+    height: 166px;
     object-fit: cover;
     border-radius: 8px;
     border: 1px solid var(--color-border);

@@ -385,6 +385,23 @@ button.button-outline{
     }
 }
 
+.button-outline {
+    border: 1.5px solid var(--color-accent);
+    color: var(--color-accent);
+    background: transparent;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.button-outline:hover, .button-outline:active {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    border-color: var(--color-accent);
+    border-width: 1.5px;
+    box-sizing: border-box;
+    transform: none;
+    padding: 10px;
+}
 
 /* ===============================
    EMAIL CONTACT

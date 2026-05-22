@@ -440,7 +440,7 @@ CONTACT SECTION
 ========================= */
     .contact-section {
         text-align: center;
-        padding: 80px 20px 100px; /* <-- margen arriba y abajo de toda la sección */
+        padding: 50px 20px 100px; /* <-- margen arriba y abajo de toda la sección */
     }
 
     .contact-section .medium-spacing {
@@ -462,4 +462,21 @@ CONTACT SECTION
         .contact-section .medium-spacing {
             font-size: 2rem;
         }
+    }
+
+    /* =========================
+    ABOUT ME BOTTOM
+    ========================= */
+    .aboutme-bottom {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .aboutme-social {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }

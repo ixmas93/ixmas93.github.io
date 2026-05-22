@@ -89,6 +89,7 @@ nav {
     background-color: var(--color-accent);
     color: var(--color-bg);
     border-color: var(--color-accent);
+    transform: none;
 }
 
 /* Tarjetas */

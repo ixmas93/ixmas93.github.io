@@ -500,50 +500,119 @@ CONTACT SECTION
     }
 
     /* =========================
-    HERO SECTION
-    ========================= */
-    .hero-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 60px 20px 40px;
-        gap: 16px;
-    }
+   HERO SECTION
+========================= */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px 50px;
+    gap: 16px;
+}
 
+/* Foto circular */
+.hero-photo-wrapper {
+    width: 160px;       /* <-- tamaño del círculo */
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid var(--color-accent);
+    overflow: hidden;
+    box-shadow: 0 0 24px rgba(0, 229, 204, 0.2);
+    flex-shrink: 0;
+}
+
+.hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* <-- recorta sin deformar */
+    object-position: center top; /* <-- ajusta posición: center, top, 50% 20%, etc */
+    display: block;
+    scale: 1;                   /* <-- zoom: 1 = normal, 1.2 = acercado */
+    transform-origin: center top;
+}
+
+/* Nombre */
+.hero-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--color-text);
+    margin: 0;
+}
+
+/* Subtítulo */
+.hero-subtitle {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+/* Iconos redes */
+.hero-social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+/* =========================
+   ABOUT ME SECTION
+========================= */
+.aboutme-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+    text-align: center;
+}
+
+.aboutme-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.4rem;
+    color: var(--color-text);
+    margin-bottom: 20px;
+}
+
+.aboutme-text {
+    text-align: justify;
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    margin-bottom: 32px;
+}
+
+.aboutme-text p {
+    margin-bottom: 12px;
+}
+
+.aboutme-pills-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.aboutme-pills-row .tech-label {
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 0.95rem;
+    flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
     .hero-photo-wrapper {
-        width: 160px;
-        height: 160px;
-        border-radius: 50%;
-        border: 3px solid var(--color-accent);
-        overflow: hidden;
-        box-shadow: 0 0 24px rgba(0, 229, 204, 0.2);
+        width: 120px;
+        height: 120px;
     }
 
-    .hero-photo {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
+    .hero-name {
+        font-size: 1.6rem;
     }
 
-    .hero-subtitle {
-        font-size: 1rem;
-        color: var(--color-text-muted);
-        margin: 0;
-        letter-spacing: 0.05em;
+    .aboutme-pills-row {
+        flex-direction: column;
+        align-items: flex-start;
     }
-
-    .hero-social {
-        display: flex;
-        gap: 12px;
-        align-items: center;
-        margin-top: 8px;
-    }
-
-    @media (max-width: 500px) {
-        .hero-photo-wrapper {
-            width: 120px;
-            height: 120px;
-        }
-    }
+}

@@ -600,6 +600,18 @@ CONTACT SECTION
     flex-shrink: 0;
 }
 
+.aboutme-pills-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.aboutme-pills-block .tech-pills {
+    justify-content: center;
+}
+
 /* Responsive */
 @media (max-width: 500px) {
     .hero-photo-wrapper {

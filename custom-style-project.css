@@ -291,18 +291,27 @@
         min-width: 120px;
     }
 
-    /* =========================
-    CONTACT SECTION
-    ========================= */
+/* =========================
+CONTACT SECTION
+========================= */
     .contact-section {
         text-align: center;
-        padding: 60px 20px 40px;
+        padding: 60px 20px 40px; /* <-- margen arriba y abajo de toda la sección */
     }
 
     .contact-section .medium-spacing {
         font-size: 3.5rem;
-        margin-bottom: 32px;
+        margin-bottom: 40px; /* <-- espacio entre el título y el email */
         display: block;
+    }
+
+    .contact-email {
+        margin-top: 0px;    /* <-- espacio arriba del bloque email */
+        margin-bottom: 30px; /* <-- espacio abajo del bloque email, antes de los iconos */
+    }
+
+    .box-contact {
+        margin-top: 0px; /* <-- espacio arriba de los iconos */
     }
 
     @media (max-width: 650px) {

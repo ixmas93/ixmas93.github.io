@@ -125,7 +125,7 @@
 @media (max-width: 750px) {
     .aboutme-layout {
         flex-direction: column;
-        gap: 30px;
+        gap: 0;
     }
 
     .aboutme-sidebar {
@@ -133,26 +133,43 @@
         position: static;
         flex-direction: column;
         align-items: center;
+        order: 2;
+        padding: 20px 0;
+    }
+
+    .aboutme-main {
+        order: 1;
+    }
+
+    .aboutme-hero {
+        padding: 20px 0 0;
+        margin-bottom: 0;
+    }
+
+    /* Oculta todo en aboutme-main excepto el hero en orden 1 */
+    .aboutme-main .aboutme-block {
+        order: 3;
     }
 
     .aboutme-sidebar-photo {
         width: 160px;
         height: 160px;
-        border-radius: 12px;  /* <-- esquinas redondeadas en vez de círculo */
+        border-radius: 12px;
         object-fit: cover;
         object-position: center top;
     }
 
     .aboutme-sidebar-social {
-        flex-wrap: wrap;  /* <-- en móvil sí permite salto de línea */
+        flex-wrap: wrap;
         justify-content: center;
     }
 
     .aboutme-sidebar-social .logo {
-        width: 36px;      /* <-- iconos más pequeños en móvil */
+        width: 36px;
     }
 
     .aboutme-sidebar-btn {
-        width: auto;
+        width: 80%;
+        text-align: center;
     }
 }

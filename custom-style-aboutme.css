@@ -1,0 +1,148 @@
+/* =========================
+   ABOUT ME PAGE
+========================= */
+
+/* Layout principal: sidebar + contenido */
+.aboutme-layout {
+    display: flex;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+/* =========================
+   SIDEBAR IZQUIERDA
+========================= */
+.aboutme-sidebar {
+    flex-shrink: 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: sticky;  /* <-- se queda fija al hacer scroll */
+    top: 80px;
+}
+
+.aboutme-sidebar-photo {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center top; /* <-- ajusta posición de la foto */
+    display: block;
+}
+
+.aboutme-sidebar-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.aboutme-sidebar-btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* =========================
+   COLUMNA DERECHA
+========================= */
+.aboutme-main {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Nombre y subtítulo */
+.aboutme-hero {
+    margin-bottom: 40px;
+}
+
+.aboutme-hero-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-text);
+    margin: 0 0 6px;
+}
+
+.aboutme-hero-subtitle {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+/* Bloques de contenido */
+.aboutme-block {
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(0, 229, 204, 0.1);
+}
+
+.aboutme-block:last-child {
+    border-bottom: none;
+}
+
+.aboutme-block-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    margin-bottom: 16px;
+}
+
+.aboutme-block-text {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* Experiencia dentro de bloques sin borde propio */
+.aboutme-block .experience-item {
+    margin-bottom: 12px;
+}
+
+.aboutme-block .experience-item:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================
+   PILLS A ANCHO COMPLETO
+========================= */
+.aboutme-pills-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 750px) {
+    .aboutme-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .aboutme-sidebar {
+        width: 100%;
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .aboutme-sidebar-photo {
+        width: 140px;
+        border-radius: 50%;
+    }
+
+    .aboutme-sidebar-btn {
+        width: auto;
+    }
+}

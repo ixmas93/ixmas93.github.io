@@ -17,19 +17,19 @@
 ========================= */
 .aboutme-sidebar {
     flex-shrink: 0;
-    width: 220px;        /* <-- ancho del bloque sidebar */
+    width: 250px;        /* <-- ancho del bloque sidebar */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
     position: sticky;
-    top: 80px;
+    top: 100px;
 }
 
 .aboutme-sidebar-photo {
-    width: 180px;        /* <-- tamaño de la foto */
-    height: 220px;       /* <-- altura de la foto */
-    border-radius: 8px;
+    width: 250px;        /* <-- tamaño de la foto */
+    height: 250px;       /* <-- altura de la foto */
+    border-radius: 15px;
     object-fit: cover;
     object-position: center top;
     display: block;
@@ -43,7 +43,7 @@
 }
 
 .aboutme-sidebar-social .logo {
-    width: 36px;         /* <-- tamaño de los iconos */
+    width: 50px;         /* <-- tamaño de los iconos */
 }
 
 /* =========================

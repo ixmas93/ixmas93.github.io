@@ -17,34 +17,33 @@
 ========================= */
 .aboutme-sidebar {
     flex-shrink: 0;
-    width: 200px;
+    width: 220px;        /* <-- ancho del bloque sidebar */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    position: sticky;  /* <-- se queda fija al hacer scroll */
+    position: sticky;
     top: 80px;
 }
 
 .aboutme-sidebar-photo {
-    width: 100%;
+    width: 180px;        /* <-- tamaño de la foto */
+    height: 220px;       /* <-- altura de la foto */
     border-radius: 8px;
     object-fit: cover;
-    object-position: center top; /* <-- ajusta posición de la foto */
+    object-position: center top;
     display: block;
 }
 
 .aboutme-sidebar-social {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;   /* <-- fuerza una sola línea */
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
 }
 
-.aboutme-sidebar-btn {
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
+.aboutme-sidebar-social .logo {
+    width: 36px;         /* <-- tamaño de los iconos */
 }
 
 /* =========================
@@ -130,33 +129,19 @@
     }
 
     .aboutme-sidebar {
-        flex-shrink: 0;
-        width: 220px;        /* <-- ancho del bloque sidebar */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-        position: sticky;
-        top: 80px;
+        width: 100%;
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .aboutme-sidebar-photo {
-        width: 180px;        /* <-- tamaño de la foto */
-        height: 220px;       /* <-- altura de la foto */
-        border-radius: 8px;
-        object-fit: cover;
-        object-position: center top;
-        display: block;
+        width: 140px;
+        border-radius: 50%;
     }
 
-    .aboutme-sidebar-social {
-        display: flex;
-        flex-wrap: nowrap;   /* <-- fuerza una sola línea */
-        justify-content: center;
-        gap: 8px;
-    }
-
-    .aboutme-sidebar-social .logo {
-        width: 36px;         /* <-- tamaño de los iconos */
+    .aboutme-sidebar-btn {
+        width: auto;
     }
 }

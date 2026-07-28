@@ -136,9 +136,11 @@
     }
 
     .aboutme-sidebar-photo {
-        width: 140px;
-        height: 140px;
-        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+        border-radius: 12px;  /* <-- esquinas redondeadas en vez de círculo */
+        object-fit: cover;
+        object-position: center top;
     }
 
     .aboutme-sidebar-social {

@@ -123,9 +123,14 @@
    RESPONSIVE
 ========================= */
 @media (max-width: 750px) {
+
+    .aboutme-hero {
+        padding: 20px 20px 0;
+    }
+
     .aboutme-layout {
         flex-direction: column;
-        gap: 0;
+        gap: 20px;
     }
 
     .aboutme-sidebar {
@@ -133,22 +138,6 @@
         position: static;
         flex-direction: column;
         align-items: center;
-        order: 2;
-        padding: 20px 0;
-    }
-
-    .aboutme-main {
-        order: 1;
-    }
-
-    .aboutme-hero {
-        padding: 20px 0 0;
-        margin-bottom: 0;
-    }
-
-    /* Oculta todo en aboutme-main excepto el hero en orden 1 */
-    .aboutme-main .aboutme-block {
-        order: 3;
     }
 
     .aboutme-sidebar-photo {

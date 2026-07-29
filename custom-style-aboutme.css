@@ -156,3 +156,44 @@
         width: auto;
     }
 }
+
+/* =========================
+   CONOCIMIENTOS TÉCNICOS
+========================= */
+.tech-category {
+    margin-bottom: 24px;
+}
+
+.tech-category:last-child {
+    margin-bottom: 0;
+}
+
+.tech-category-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.95rem;
+    color: #ff9f43; /* <-- naranja/amarillo que ya usamos */
+    margin-bottom: 10px;
+}
+
+.tech-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tech-list li {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    padding-left: 16px;
+    position: relative;
+}
+
+.tech-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #ff9f43;
+    font-size: 0.7rem;
+    top: 5px;
+}

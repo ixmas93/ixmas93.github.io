@@ -612,6 +612,11 @@ CONTACT SECTION
     justify-content: center;
 }
 
+.aboutme-more {
+    margin-top: 24px;
+    text-align: center;
+}
+
 /* Responsive */
 @media (max-width: 500px) {
     .hero-photo-wrapper {

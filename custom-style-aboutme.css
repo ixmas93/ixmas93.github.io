@@ -171,7 +171,8 @@
 .tech-category-title {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.95rem;
-    color: #ff9f43; /* <-- naranja/amarillo que ya usamos */
+    color: #e8eaf0;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
@@ -193,7 +194,7 @@
     content: '▸';
     position: absolute;
     left: 0;
-    color: #ff9f43;
+    color: #00e5cc;
     font-size: 0.7rem;
     top: 5px;
 }

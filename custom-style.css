@@ -407,32 +407,68 @@ button.button-outline{
 /* ===============================
    EMAIL CONTACT
 ================================ */
-
 .contact-email {
-    display: flex;                     /* cambia a flex “normal” */
-    width: fit-content;                 /* ancho se ajusta al contenido */
+    display: flex;
     align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    padding: 15px 25px;
+    gap: 12px;
+    padding: 12px 16px;         /* <-- padding interior del bloque */
     border-radius: 12px;
     background-color: #242938;
     position: relative;
-    margin: 0 auto 30px auto;           /* ahora sí se centra */
+    width: fit-content;
+    margin: 0 auto 30px auto;
     box-shadow: 0 3px 10px rgba(0,0,0,0.5);
 }
 
-
-.email-label{
-    font-weight: bold;
+/* Icono del correo a la izquierda */
+.contact-email-icon {
+    width: 36px;                /* <-- tamaño del icono de correo */
+    height: 36px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: invert(1) brightness(2);
 }
 
-#email-address{
-    font-weight: bold;
+/* Bloque con fondo ligeramente más claro donde va el email */
+.contact-email-address-wrapper {
+    background-color: #2f3447;  /* <-- color del fondo del email, ajusta a tu gusto */
+    border-radius: 8px;
+    padding: 8px 14px;          /* <-- padding interior del campo email */
+    display: flex;
+    align-items: center;
 }
 
+#email-address {
+    font-weight: bold;
+    font-size: 0.95rem;         /* <-- tamaño del texto del email */
+    color: var(--color-text);
+    white-space: nowrap;
+}
 
-/* burbuja flotante */
+/* Icono de copiar email */
+.contact-copy-icon {
+    width: 32px;                /* <-- tamaño del icono de copiar */
+    height: 32px;
+    object-fit: contain;
+    cursor: pointer;
+    flex-shrink: 0;
+    filter: invert(1) brightness(2);
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.contact-copy-icon:hover {
+    opacity: 1;
+}
+
+/* Botón enviar correo pegado a la derecha */
+.contact-send-btn {
+    margin-left: auto;          /* <-- empuja el botón a la derecha */
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Burbuja flotante de confirmación */
 .copy-popup {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.9);
@@ -445,13 +481,27 @@ button.button-outline{
     white-space: nowrap;
     transform: translateY(0);
     transition: opacity 0.3s ease, transform 1s ease-out;
-    z-index: 10;                       /* siempre encima del contenedor */
+    z-index: 10;
 }
 
-/* cuando se muestra, aplicamos clase "visible" */
 .copy-popup.visible {
     opacity: 1;
-    transform: translateY(-20px); /* se moverá 20px hacia arriba */
+    transform: translateY(-20px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contact-email {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .contact-send-btn {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* =========================

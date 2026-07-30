@@ -518,7 +518,7 @@ CONTACT SECTION
 
     .contact-email {
         margin-top: 0px;    /* <-- espacio arriba del bloque email */
-        margin-bottom: 0px; /* <-- espacio abajo del bloque email, antes de los iconos */
+        margin-bottom: 40px; /* <-- espacio entre el email y el footer */
     }
 
     .box-contact {

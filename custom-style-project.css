@@ -178,22 +178,21 @@
     margin-top: 20px;
 }
 
+/* Espacio antes del footer */
+footer {
+    margin-top: 40px; /* <-- ajusta a tu gusto */
+}
+
 /* =========================
    NAVEGACIÓN
 ========================= */
 .prj-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* <-- centrado */
     align-items: center;
     max-width: 900px;
     margin: 0 auto 40px;
     padding: 0 20px;
-    gap: 12px;
-}
-
-.prj-nav-btn {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.95rem;
 }
 
 .prj-nav-center {

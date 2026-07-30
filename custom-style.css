@@ -58,7 +58,8 @@ nav {
 }
 
 .main-nav li a {
-    color: var(--color-text-muted);
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .main-nav li a:hover {

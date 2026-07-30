@@ -507,7 +507,7 @@ CONTACT SECTION
 ========================= */
     .contact-section {
         text-align: center;
-        padding: 50px 20px 100px; /* <-- margen arriba y abajo de toda la sección */
+        padding: 60px 20px 40px; /* <-- margen arriba y abajo de toda la sección */
     }
 
     .contact-section .medium-spacing {

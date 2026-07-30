@@ -522,7 +522,7 @@ CONTACT SECTION
     }
 
     .box-contact {
-        margin-top: 0px; /* <-- espacio arriba de los iconos */
+        margin-top: -35px; /* <-- espacio arriba de los iconos */
     }
 
     @media (max-width: 650px) {

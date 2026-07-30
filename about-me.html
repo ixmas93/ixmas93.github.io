@@ -251,16 +251,28 @@
     </section>
     -->
 
-    <!-- contacto -->
+    <!-- contact me -->
     <section id="contact-me" class="contact-section">
         <h1 class="medium-spacing center">¡Pongámonos en contacto!</h1>
+
         <section class="contact-email">
-            <span class="email-label">Email:</span>
+        <!-- icono correo izquierda -->
+        <img src="assets/email-icon.png" alt="email" class="contact-email-icon">
+        
+        <!-- email sobre fondo ligeramente más claro -->
+        <div class="contact-email-address-wrapper">
             <span id="email-address">ismaelvaliente93@gmail.com</span>
-            <a href="mailto:ismaelvaliente93@gmail.com" class="button-outline">Enviar correo</a>
-            <a href="javascript:void(0)" class="button-outline" onclick="copyEmail()">Copiar email</a>
-            <span id="copy-message" class="copy-popup"></span>
-        </section>
+        </div>
+
+        <!-- botón copiar (icono) -->
+        <img src="assets/copy-icon.png" alt="Copiar email" class="contact-copy-icon" 
+            onclick="copyEmail()" title="Copiar email">
+
+        <!-- botón enviar correo pegado a la derecha -->
+        <a href="mailto:ismaelvaliente93@gmail.com" class="button-outline contact-send-btn">Enviar correo</a>
+
+        <!-- notificación flotante -->
+        <span id="copy-message" class="copy-popup"></span>
     </section>
 
     <!-- footer -->

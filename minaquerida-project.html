@@ -212,9 +212,18 @@
             navigator.clipboard.writeText(email);
             const message = document.getElementById("copy-message");
             message.textContent = "¡Email copiado!";
-            const button = event.currentTarget;
-            message.style.top = (button.offsetTop - 30) + "px";
-            message.style.left = button.offsetLeft + "px";
+
+            if (window.innerWidth <= 600) {
+                message.style.left = "50%";
+                message.style.top = "0px";
+                message.style.marginLeft = "-50px"; /* <-- centra sin usar translateX */
+            } else {
+                const button = event.currentTarget;
+                message.style.left = button.offsetLeft + "px";
+                message.style.top = (button.offsetTop - 10) + "px";
+                message.style.marginLeft = "0px";
+            }
+
             message.classList.add("visible");
             setTimeout(() => { message.classList.remove("visible"); }, 2000);
         }

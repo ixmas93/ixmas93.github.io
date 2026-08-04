@@ -125,24 +125,36 @@
 @media (max-width: 750px) {
     .aboutme-layout {
         flex-direction: column;
-        gap: 20px;
+        gap: 0;
     }
 
+    /* El hero (nombre) va primero */
+    .aboutme-main {
+        order: 1;
+    }
+
+    /* La sidebar (foto + botones) va segunda */
     .aboutme-sidebar {
         width: 100%;
         position: static;
         flex-direction: column;
         align-items: center;
-        order: 1;
-    }
-
-    .aboutme-main {
         order: 2;
+        padding: 20px 0;
     }
 
+    /* Solo mostramos el hero de aboutme-main en order 1,
+       el resto del contenido va después de la sidebar */
     .aboutme-hero {
         text-align: center;
-        margin-bottom: 20px;
+        padding: 20px 20px 0;
+        margin-bottom: 0;
+    }
+
+    /* Ocultamos los bloques de contenido temporalmente
+       para que solo el hero quede arriba */
+    .aboutme-block {
+        order: 3;
     }
 
     .aboutme-sidebar-photo {
@@ -163,7 +175,7 @@
     }
 
     .aboutme-sidebar-btn {
-        width: 260px; /* <-- mismo ancho para ambos botones */
+        width: 260px;
         text-align: center;
         box-sizing: border-box;
     }

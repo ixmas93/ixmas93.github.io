@@ -46,6 +46,12 @@
     width: 50px;         /* <-- tamaño de los iconos */
 }
 
+.aboutme-sidebar-btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
 /* =========================
    COLUMNA DERECHA
 ========================= */

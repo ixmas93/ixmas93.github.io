@@ -128,34 +128,24 @@
         gap: 0;
     }
 
-    /* El hero (nombre) va primero */
-    .aboutme-main {
-        order: 1;
-    }
-
-    /* La sidebar (foto + botones) va segunda */
     .aboutme-sidebar {
         width: 100%;
         position: static;
         flex-direction: column;
         align-items: center;
-        order: 2;
+        order: 1;
         padding: 20px 0;
-         margin-top: 15px;
     }
 
-    /* Solo mostramos el hero de aboutme-main en order 1,
-       el resto del contenido va después de la sidebar */
+    .aboutme-main {
+        order: 2;
+    }
+
     .aboutme-hero {
         text-align: center;
         padding: 20px 20px 0;
+        margin-top: 15px;
         margin-bottom: 0;
-    }
-
-    /* Ocultamos los bloques de contenido temporalmente
-       para que solo el hero quede arriba */
-    .aboutme-block {
-        order: 3;
     }
 
     .aboutme-sidebar-photo {

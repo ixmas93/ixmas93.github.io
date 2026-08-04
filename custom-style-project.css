@@ -284,6 +284,11 @@
         text-align: center;
         min-width: 120px;
     }
+}
 
-
+@media (max-width: 600px) {
+    .prj-title {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
 }

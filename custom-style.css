@@ -682,3 +682,29 @@ CONTACT SECTION
         align-items: flex-start;
     }
 }
+
+
+/* =========================
+   HAMBURGER MENU MÓVIL
+========================= */
+@media screen and (max-width: 510px) {
+    #main-toggle {
+        border: 1px solid var(--color-accent);
+        background-color: var(--color-bg-card);
+    }
+
+    .nav-icon {
+        background-color: var(--color-accent);
+    }
+
+    .nav-icon::before,
+    .nav-icon::after {
+        background-color: var(--color-accent);
+    }
+
+    /* Menú desplegado también con el tema oscuro */
+    #drop:checked + .main-nav {
+        background-color: var(--color-bg-card);
+        border-bottom: 1px solid var(--color-border);
+    }
+}

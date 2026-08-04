@@ -322,13 +322,13 @@ function copyEmail() {
 
     if (window.innerWidth <= 600) {
         message.style.left = "50%";
-        message.style.transform = "translateX(-50%)";
-        message.style.top = "-35px";
+        message.style.top = "0px";
+        message.style.marginLeft = "-50px"; /* <-- centra sin usar translateX */
     } else {
         const button = event.currentTarget;
-        message.style.transform = "none";
         message.style.left = button.offsetLeft + "px";
-        message.style.top = (button.offsetTop - 35) + "px";
+        message.style.top = (button.offsetTop - 10) + "px";
+        message.style.marginLeft = "0px";
     }
 
     message.classList.add("visible");

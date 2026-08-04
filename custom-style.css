@@ -490,15 +490,40 @@ button.button-outline{
 /* Responsive */
 @media (max-width: 600px) {
     .contact-email {
-        flex-wrap: wrap;
-        justify-content: center;
         width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .contact-email-icon {
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+    }
+
+    .contact-email-address-wrapper {
+        flex: 1;
+        min-width: 0;
+    }
+
+    #email-address {
+        font-size: 0.78rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .contact-copy-icon {
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
     }
 
     .contact-send-btn {
         margin-left: 0;
         width: 100%;
         text-align: center;
+        box-sizing: border-box;
+        flex-basis: 100%; /* <-- fuerza el salto solo en este elemento */
     }
 }
 

@@ -141,6 +141,7 @@
         align-items: center;
         order: 2;
         padding: 20px 0;
+         margin-top: 15px;
     }
 
     /* Solo mostramos el hero de aboutme-main en order 1,

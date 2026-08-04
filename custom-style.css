@@ -477,14 +477,12 @@ button.button-outline{
     opacity: 0;
     pointer-events: none;
     white-space: nowrap;
-    transform: translateY(0);
-    transition: opacity 0.3s ease, transform 1s ease-out;
+    transition: opacity 0.3s ease, top 0.3s ease;
     z-index: 10;
 }
 
 .copy-popup.visible {
     opacity: 1;
-    transform: translateY(-20px);
 }
 
 /* Responsive */
